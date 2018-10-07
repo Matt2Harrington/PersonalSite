@@ -3,3 +3,7 @@ body {
   font-family: "IBM Plex Sans";
   width: 100%;
 }
+
+hr {
+  color: white;
+}

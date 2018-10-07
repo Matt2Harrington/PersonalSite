@@ -2,3 +2,9 @@
   height: 50px!important;
   background: black!important;
 }
+
+#matt2Logo {
+  position: fixed;
+  padding-left: 0px;
+  display: inline-block
+}
