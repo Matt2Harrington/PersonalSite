@@ -7,3 +7,7 @@ body {
 hr {
   color: white;
 }
+
+body > div.container-fluid {
+  margin-top: 50px;
+}

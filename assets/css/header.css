@@ -1,10 +1,7 @@
-#wrapper > div {
-  height: 50px!important;
-  background: black!important;
-}
-
 #header {
   text-align: center;
+  height: 50px!important;
+  background: black!important;
 }
 
 #matt2Logo {
@@ -38,5 +35,9 @@
 }
 
 #photographyTop {
+  margin-right: 30px;
+}
+
+#contactTop {
   margin-right: 30px;
 }
