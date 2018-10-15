@@ -3,8 +3,40 @@
   background: black!important;
 }
 
+#header {
+  text-align: center;
+}
+
 #matt2Logo {
-  position: fixed;
-  padding-left: 0px;
-  display: inline-block
+  position: absolute;
+  display: inline;
+}
+
+#topLabels {
+  position:absolute;
+  margin-left: 75px;
+}
+
+#topLabels a {
+  text-decoration: none;
+  color: white;
+}
+#topLabels a:hover {
+  color: #cccccc;
+}
+
+#aboutTop {
+  margin-right: 30px;
+}
+
+#educationTop {
+  margin-right: 30px;
+}
+
+#experienceTop {
+  margin-right: 30px;
+}
+
+#photographyTop {
+  margin-right: 30px;
 }
