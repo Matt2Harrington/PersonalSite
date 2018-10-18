@@ -11,3 +11,18 @@ hr {
 body > div.container-fluid {
   margin-top: 50px;
 }
+
+.menu-toggle {
+  color: white;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+/*
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+} */

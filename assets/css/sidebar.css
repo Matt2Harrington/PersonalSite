@@ -1,0 +1,11 @@
+.visible {
+  display: block!important;
+}
+
+#sidebar {
+  background-color: black;
+  max-width: 100%;
+  opacity: 1;
+  overflow: auto;
+  text-align: center;
+}

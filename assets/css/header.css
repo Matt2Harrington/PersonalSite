@@ -4,14 +4,16 @@
   background: black!important;
 }
 
-#matt2Logo {
-  position: absolute;
-  display: inline;
+#matt2LogoHome {
+  margin-right: 20px;
 }
 
 #topLabels {
-  position:absolute;
-  margin-left: 75px;
+  position: fixed;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
 }
 
 #topLabels a {

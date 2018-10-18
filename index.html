@@ -11,7 +11,8 @@
       <!-- Custom CSS -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
-
+      <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <!-- link for bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -21,10 +22,15 @@
     </head>
 
   <body>
+    <div id="sidebar">Hello World!!</div>
 
     <div class="navbar fixed-top" id="header">
-      <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
       <div id="topLabels">
+        <span id="toggle" class="menu-toggle">
+          <i class="fas fa-bars fa-2x"></i>
+          <span id="normalHamburger"></span>
+        </span>
+        <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
         <a href="index.html" id="aboutTop">About</a>
         <a href="index.html" id="educationTop">Education</a>
         <a href="index.html" id="experienceTop">Experience</a>
@@ -33,7 +39,11 @@
       </div>
     </div> <!-- End of the header -->
 
-<div class="container-fluid">
+
+
+
+
+<div class="container-fluid" id="wrapper">
 
   <div class="row">
     <div class="col">
@@ -69,7 +79,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="assets/js/jquery.slidereveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     </body>
   </html>
