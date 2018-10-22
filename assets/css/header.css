@@ -1,4 +1,45 @@
-#wrapper > div {
+#header {
+  text-align: center;
   height: 50px!important;
   background: black!important;
+}
+
+#matt2LogoHome {
+  margin-right: 20px;
+}
+
+#topLabels {
+  position: fixed;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+}
+
+#topLabels a {
+  text-decoration: none;
+  color: white;
+}
+#topLabels a:hover {
+  color: #cccccc;
+}
+
+#aboutTop {
+  margin-right: 30px;
+}
+
+#educationTop {
+  margin-right: 30px;
+}
+
+#experienceTop {
+  margin-right: 30px;
+}
+
+#photographyTop {
+  margin-right: 30px;
+}
+
+#contactTop {
+  margin-right: 30px;
 }
