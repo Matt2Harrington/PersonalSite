@@ -1,25 +1,25 @@
 #header {
-  text-align: center;
+  text-align: right;
   height: 50px!important;
   background: black!important;
+  opacity: 0.9;
+  width: 100%;
 }
 
 #matt2LogoHome {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #topLabels {
-  position: fixed;
-  text-align: left;
-  margin-left:auto;
-  margin-right:auto;
-  width:960px;
+  text-align: right;
+  width: auto;
 }
 
 #topLabels a {
   text-decoration: none;
   color: white;
 }
+
 #topLabels a:hover {
   color: #cccccc;
 }

@@ -2,10 +2,39 @@
   display: block!important;
 }
 
-#sidebar {
+#sidebar-wrapper {
   background-color: black;
   max-width: 100%;
   opacity: 1;
   overflow: auto;
   text-align: center;
+  color: white;
+  display: block;
+  padding-top: 60px;
+}
+
+#matt2LogoHomeSidebar {
+  padding-top: 100px;
+}
+
+.links-sidebar li {
+  padding-top: 20px;
+}
+
+#listOfLinks {
+  list-style: none;
+}
+
+.links-sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.links-sidebar a:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.links-sidebar hr {
+  color: white;
 }
