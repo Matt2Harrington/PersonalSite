@@ -3,6 +3,7 @@
 }
 
 #sidebar-wrapper {
+
   background-color: black;
   max-width: 100%;
   opacity: 1;
@@ -37,4 +38,5 @@
 
 .links-sidebar hr {
   color: white;
+
 }
