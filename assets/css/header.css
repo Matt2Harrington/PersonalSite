@@ -13,6 +13,7 @@
 #topLabels {
   text-align: right;
   width: auto;
+  margin-bottom: 10px;
 }
 
 #topLabels a {
