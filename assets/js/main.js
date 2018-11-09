@@ -6,12 +6,14 @@ $(document).ready(function() {
 
   $("#sidebar-wrapper").slideReveal({
     trigger: $("#toggle"),
-    push: true,
-    speed: 200
+    push: false,
+    speed: 200,
+    overlay: true
   });
 
   // this allows the second button to close the menu
   $("#toggleSidebar").mousedown(function() {
     $('#sidebar-wrapper').slideReveal("toggle");
   });
+
 });

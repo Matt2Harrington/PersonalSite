@@ -4,6 +4,7 @@
   background: black!important;
   opacity: 0.9;
   width: 100%;
+  -webkit-user-select: none;
 }
 
 #matt2LogoHome {
@@ -13,7 +14,8 @@
 #topLabels {
   text-align: right;
   width: auto;
-  margin-bottom: 10px;
+  -webkit-user-select: none;
+  /* margin-bottom: 5px; */
 }
 
 #topLabels a {
@@ -43,4 +45,22 @@
 
 #contactTop {
   margin-right: 30px;
+}
+
+#mobileTrigger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #header {
+    display: none;
+  }
+
+  #topLabels {
+    display:none;
+  }
+
+  #mobileTrigger {
+    display: block;
+  }
 }

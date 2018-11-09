@@ -12,14 +12,16 @@ body > div.container-fluid {
   margin-top: 50px;
 }
 
-.menu-toggle {
+#toggle {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
-  /* position: fixed; */
+  text-align: left;
+  display: block;
+  margin-top: 10px;
 }
 
-.menu-toggle:hover {
+#toggle:hover {
   cursor: pointer;
 }
 
@@ -29,3 +31,9 @@ body > div.container-fluid {
   width: auto;
   margin-top: 70px;
 }
+
+/* @media screen and (max-width = 700px) {
+  #header {
+    display: none;
+  }
+} */

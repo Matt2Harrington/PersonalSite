@@ -4,17 +4,18 @@
 
 #sidebar-wrapper {
   background-color: black;
-  max-width: 100%;
+  max-width: 400px;
   opacity: 1;
   overflow: auto;
   text-align: center;
   color: white;
   display: block;
-  padding-top: 60px;
+  -webkit-user-select: none;
 }
 
 #matt2LogoHomeSidebar {
   padding-top: 100px;
+  height: 25px;
 }
 
 .links-sidebar li {
@@ -23,6 +24,7 @@
 
 #listOfLinks {
   list-style: none;
+  padding-top: 20px;
 }
 
 .links-sidebar a {
@@ -37,4 +39,17 @@
 
 .links-sidebar hr {
   color: white;
+}
+
+#toggleSidebar {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+#toggleSidebar:hover {
+  cursor: pointer;
 }
