@@ -31,24 +31,18 @@
   text-align: center;
 }
 
-#mattHarringtonAboutParagraph > img:nth-child(9) {
+#mattHarringtonAboutParagraph > img:nth-child(11) {
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
 }
 
-#mattHarringtonAboutParagraph > img:nth-child(12) {
+#mattHarringtonAboutParagraph > img:nth-child(16) {
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
-}
-
-#bassTitle {
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 20px;
 }
 
 #computerTitle {
@@ -61,4 +55,10 @@
   text-align: center;
   margin-top: 20px;
   padding-bottom: 20px;
+}
+
+#bassTitle {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
