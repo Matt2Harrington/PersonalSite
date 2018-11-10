@@ -8,7 +8,57 @@
 
 #mattHarringtonAboutTitle {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-bottom: 10px;
 
+}
+
+#hobbiesTitle {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#hobbiesLogos {
+
+
+}
+
+#mattHarringtonAboutParagraph > img:nth-child(6) {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+#mattHarringtonAboutParagraph > img:nth-child(9) {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+#mattHarringtonAboutParagraph > img:nth-child(12) {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+#bassTitle {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#computerTitle {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#cameraTitle {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
