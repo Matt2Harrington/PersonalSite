@@ -14,11 +14,10 @@ body > div.container-fluid {
 
 #toggle {
   color: black;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   text-align: left;
   display: block;
-  margin-top: 10px;
 }
 
 #toggle:hover {
@@ -32,8 +31,11 @@ body > div.container-fluid {
   margin-top: 70px;
 }
 
-/* @media screen and (max-width = 700px) {
-  #header {
-    display: none;
+@media screen and (max-width: 1000px) {
+  #wrapper {
+    margin-left: 55px;
+    margin-right: 55px;
+    width: auto;
+    margin-top: 70px;
   }
-} */
+}
