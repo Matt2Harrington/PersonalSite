@@ -2,9 +2,10 @@
   text-align: right;
   height: 50px!important;
   background: black!important;
-  opacity: 0.9;
+  opacity: 1.0;
   width: 100%;
   -webkit-user-select: none;
+  padding-right: 0px;
 }
 
 #matt2LogoHome {
