@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+
+    background-color: #233559!important;
+}
+
+section {
+  border-bottom: 1px solid white;
+  padding: 0;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  color: white;
+}
+
+
+#about {
+  background-color: #233559;
+  width: 100%;
+}
+
+.row {
+  padding-top: 70px;
+  margin-right: 0px;
+  padding: 70px 0px 0px 0px;
+}
+
+.col {
+  padding-left: 15px;
+}
+
+#education {
+  background-color: #be2431;
+  width: 100%;
+}
+
+#about-title {
+  text-align:left;
+  /* display: block; */
+  top: 95%;
+  left: 2%;
+}
+
+#education-title {
+  text-align:left;
+  /* display: block; */
+  top: 95%;
+  left: 2%;
+}
+
+#logoImage {
+  float: right;
+  width: 165px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+
+/* ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+li {
+  transform: translateX(-100%);
+  transition: transform 0.5s, opacity 2s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: pink;
+    margin-bottom: 10px;
+}
+
+.myList li {
+    opacity: 0;
+    position: relative;
+    animation: fadeIn 600ms ease both;
+    animation-play-state: paused;
+}
+
+.myList.play li {
+    animation-play-state: running;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+services-phone {
+  animation: fadeIn 600ms ease-in;
+  animation-play-state: running;
+} */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 15px;
+  /* visibility: hidden; */
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
+@media screen and (max-width: 1200px) {
+
+  #about-title {
+    /* display: block; */
+    /* right: 20%; */
+    left: 65%;
+    top: 3%;
+  }
+
+  .mySlidesServices {
+    top: 10%;
+    position: absolute;
+    left: 23%;
+  }
+
+  #education-title {
+    /* display: block; */
+    left: 50%;
+    top: 3%;
+  }
+
+
+}

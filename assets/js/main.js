@@ -16,11 +16,4 @@ $(document).ready(function() {
     $('#sidebar-wrapper').slideReveal("toggle");
   });
 
-  /********
-  ABOUT PAGE
-  *********/
-
-  // document.write(mattAboutParagraph);
-
-
 });

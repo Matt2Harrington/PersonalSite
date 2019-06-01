@@ -14,8 +14,6 @@ body > div.container-fluid {
 
 #toggle {
   color: black;
-  /* margin-left: 10px;
-  margin-right: 10px; */
   text-align: left;
   display: block;
 }
@@ -25,17 +23,14 @@ body > div.container-fluid {
 }
 
 #wrapper {
-  margin-left: 100px;
-  margin-right:100px;
-  width: auto;
-  margin-top: 70px;
+  margin-top: 10px;
+  padding: 0px 0px 0px 0px;
 }
 
 @media screen and (max-width: 1000px) {
   #wrapper {
-    margin-left: 55px;
-    margin-right: 55px;
     width: auto;
-    margin-top: 70px;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
