@@ -20,6 +20,7 @@ section {
   scroll-snap-align: end;
   position: relative;
   color: white;
+  overflow: hidden;
 }
 
 p {
@@ -33,6 +34,7 @@ p {
 #fmuLogo {
   height: 100px;
 }
+
 
 #about {
   background-color: #233559;
@@ -149,10 +151,12 @@ h1 {
   .row {
     margin-right: 0px;
     padding: 10px 0px 0px 0px;
+    overflow: hidden;
   }
 
   .col {
     padding-left: 15px;
+    overflow: hidden;
 
   }
 

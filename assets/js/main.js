@@ -20,8 +20,9 @@ $(document).ready(function() {
 
 
 
-  document.getElementById("fmuInfo").innerHTML = "Bachelor's of Science in Computer Science with a minor in Mathematics.";
+  document.getElementById("fmuInfo").innerHTML = "Bachelor's of Science in Computer Science with a minor in Mathematics from Francis Marion University. Located in Florence, South Carolina.";
 
+  // puts an image into an id.
   var fmuLogo = new Image(5,5);
   fmuLogo.src = "assets/images/White M2H.png";
   $("#fmuLogo").attr("src", fmuLogo.src);
