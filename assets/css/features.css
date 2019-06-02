@@ -16,13 +16,23 @@ body {
 
 section {
   border-bottom: 1px solid white;
-  padding: 0;
   height: 100vh;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   position: relative;
   color: white;
 }
 
+p {
+  padding:100px;
+}
+
+.col-6 {
+  /* padding: 0px 0px 0px 0px!important; */
+}
+
+#fmuLogo {
+  height: 100px;
+}
 
 #about {
   background-color: #233559;
@@ -37,6 +47,7 @@ section {
 
 .col {
   padding-left: 15px;
+  padding-right: 0px;
 }
 
 #education {
@@ -133,13 +144,29 @@ h1 {
   font-size: calc(1rem + 3vw);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+
+  .row {
+    margin-right: 0px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .col {
+    padding-left: 15px;
+
+  }
+
+  p {
+    padding: 25px;
+  }
 
   #about-title {
-    /* display: block; */
-    /* right: 20%; */
-    left: 65%;
-    top: 3%;
+    text-align: right;
+    /* right: -30%;
+    top: 3%; */
+    position: static;
+    padding-top: 70px;
+    padding-right: 20px;
   }
 
   .mySlidesServices {
@@ -149,9 +176,12 @@ h1 {
   }
 
   #education-title {
-    /* display: block; */
-    left: 50%;
-    top: 3%;
+    text-align: right;
+    /* right: -30%;
+    top: 3%; */
+    position: static;
+    padding-top: 40px;
+    padding-right: 10px;
   }
 
 

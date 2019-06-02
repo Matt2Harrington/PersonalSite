@@ -27,10 +27,14 @@ body > div.container-fluid {
   padding: 0px 0px 0px 0px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   #wrapper {
     width: auto;
     margin-top: 0px;
     padding: 0px 0px 0px 0px;
+  }
+
+  #matt2LogoHomeSiderbar {
+    margin-right: 10px;
   }
 }
