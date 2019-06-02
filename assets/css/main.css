@@ -13,7 +13,7 @@ body > div.container-fluid {
 }
 
 #toggle {
-  color: black;
+  color: white;
   text-align: left;
   display: block;
 }
@@ -27,7 +27,7 @@ body > div.container-fluid {
   padding: 0px 0px 0px 0px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   #wrapper {
     width: auto;
     margin-top: 0px;
