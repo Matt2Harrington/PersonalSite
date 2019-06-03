@@ -24,25 +24,14 @@ section {
 }
 
 p {
-  padding:100px;
+  padding:10px;
 }
 
 .col-6 {
   /* padding: 0px 0px 0px 0px!important; */
 }
 
-#fmuLogo {
-  height: 100px;
-}
-
-
-#about {
-  background-color: #233559;
-  width: 100%;
-}
-
 .row {
-  padding-top: 70px;
   margin-right: 0px;
   padding: 70px 0px 0px 0px;
 }
@@ -52,8 +41,10 @@ p {
   padding-right: 0px;
 }
 
-#education {
-  background-color: #be2431;
+/*About CSS*/
+
+#about {
+  background-color: #233559;
   width: 100%;
 }
 
@@ -64,6 +55,13 @@ p {
   left: 2%;
 }
 
+/*Education CSS*/
+
+#education {
+  background-color: #be2431;
+  width: 100%;
+}
+
 #education-title {
   text-align:left;
   /* display: block; */
@@ -71,59 +69,15 @@ p {
   left: 2%;
 }
 
-#logoImage {
-  float: right;
-  width: 165px;
-  height: 50px;
-  margin-top: 40px;
+.educationAccomplishments {
+  text-align: center;
+  font-size: 16pt;
 }
 
-
-/* ul {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 0;
+#fmuLogo {
+  height: 100px;
+  padding: 15px;
 }
-
-li {
-  transform: translateX(-100%);
-  transition: transform 0.5s, opacity 2s;
-  opacity: 0;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-li {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    background: pink;
-    margin-bottom: 10px;
-}
-
-.myList li {
-    opacity: 0;
-    position: relative;
-    animation: fadeIn 600ms ease both;
-    animation-play-state: paused;
-}
-
-.myList.play li {
-    animation-play-state: running;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-services-phone {
-  animation: fadeIn 600ms ease-in;
-  animation-play-state: running;
-} */
 
 ul {
   list-style-type: none;
@@ -146,47 +100,75 @@ h1 {
   font-size: calc(1rem + 3vw);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
 
   .row {
     margin-right: 0px;
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     overflow: hidden;
   }
 
   .col {
-    padding-left: 15px;
+    padding-left: 10px;
     overflow: hidden;
 
   }
 
   p {
-    padding: 25px;
+    padding: 0px 20px 20px 20px;
   }
+
+    /*About CSS*/
 
   #about-title {
     text-align: right;
-    /* right: -30%;
-    top: 3%; */
     position: static;
-    padding-top: 70px;
+    padding-top: 55px;
     padding-right: 20px;
+    margin-bottom: 0px;
   }
 
-  .mySlidesServices {
-    top: 10%;
-    position: absolute;
-    left: 23%;
-  }
+  /*Education CSS*/
 
   #education-title {
     text-align: right;
-    /* right: -30%;
-    top: 3%; */
     position: static;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-right: 10px;
   }
 
+  #fmuLogo {
+    display: none;
+  }
+
+  .educationAccomplishments {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  p {
+    font-size: 10pt;
+  }
+
+  .educationAccomplishments {
+    text-align: center;
+    font-size: 13pt;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  p {
+    font-size: 9pt;
+  }
+
+  .educationAccomplishments {
+    text-align: center;
+    font-size: 10pt;
+  }
 
 }
