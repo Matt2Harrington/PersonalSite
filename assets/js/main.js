@@ -51,7 +51,16 @@ $(document).ready(function() {
 
 
 
-  document.getElementById("experienceParagraph").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
+  document.getElementById("experienceParagraphPattons").innerHTML = "Consisted of working with Windows Server 2003, solving internet communication issues, 	computer and printer maintenance, Excel data entry and extraction, and software management.";
+  document.getElementById("experienceParagraphACS").innerHTML = "Worked on a team of six interns making a web-based back-end API using Go and front-end heatmap to display events that occur on servers in real time using a time-series database. Full-time internship with mentors from company. Used SCRUM methodology as well as other agile software engineering techniques.";
+  document.getElementById("experienceParagraphACSProject").innerHTML = "Created heatmap API with specialty in front-end web development. Used HTML, CSS, and JavaScript to hook into an API created by team of fellow interns for ACS Technologies. Also helped create backend API. Technologies include Go, Kafka Connect, and Docker Compose environments to integrate. Used GitHub for VCS and worked full-time for eight weeks using agile methodologies in a professional environment.";
+
+
+  document.getElementById("experienceParagraphFMU").innerHTML = "Tasked with maintaining the SCHealthPlusMe application, create new pieces of software to help the maintainability of clinical data, educate fellow students, and oversee marketing. Created and maintained a web-based management piece of software that gives users the ability to add, remove, and access all locations entered into Firebase database. Wrote technical documentation that pairs with the source code of SCHealthPlusMe for easy maintainability and understanding. Researched new technology for future students to utilize for future iterations of the application.";
+
+  document.getElementById("experienceParagraphFMUProject").innerHTML = "Engineered an Android application through Francis Marion University, for the state of South Carolina through a grant provided by SCRA, to assist local users with finding nearby health resources for medical needs. Also provided functionality to store the user’s health data locally for data logging in a journal format. Built with Java, Google Firebase, SQLite, and third-party libraries for graphically data representation. Created all imagery and logos associated with app, as well as the UX. Worked with agile methodologies and used GitHub for repository.";
+
+
 
   // puts an image into an id.
   var fmuLogo = new Image(5,5);
