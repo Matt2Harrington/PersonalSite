@@ -35,7 +35,7 @@ p {
 
 .row {
   margin-right: 0px;
-  padding: 70px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .col {
@@ -92,7 +92,10 @@ p {
 .educationAccomplishments {
   text-align: center;
   font-size: 20pt;
+  top: 50%;
+  bottom: 50%;
   /* margin-left: 350px; */
+  margin-bottom: 20px;
 }
 
 #fmuLogo {
@@ -246,5 +249,4 @@ h1 {
     margin-right: 0px;
     padding: 0px 0px 0px 0px;
   }
-
 }
