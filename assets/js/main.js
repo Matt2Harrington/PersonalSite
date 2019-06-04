@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 
 
-  // document.getElementById("experianceParagraph").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
+  document.getElementById("experienceParagraph").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
 
   // puts an image into an id.
   var fmuLogo = new Image(5,5);
