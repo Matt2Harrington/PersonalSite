@@ -48,6 +48,11 @@ $(document).ready(function() {
   document.getElementById("phiKappaPhi").innerHTML = "Inducted into Phi Kappa Phi Honor Society.";
   document.getElementById("scholarship").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
 
+
+
+
+  document.getElementById("experianceParagraph").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
+
   // puts an image into an id.
   var fmuLogo = new Image(5,5);
   fmuLogo.src = "assets/images/cropped-Site-Icon-Full-Color-e1502396334483 white.png";

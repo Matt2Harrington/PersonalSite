@@ -107,6 +107,20 @@ p {
   margin-left: 10px;
 }
 
+/*Experience CSS  */
+
+#experience {
+  background-color: #009acd;
+  width: 100%;
+}
+
+#experience-title {
+  text-align:left;
+  /* display: block; */
+  top: 95%;
+  left: 2%;
+}
+
 ul {
   list-style-type: none;
 }
