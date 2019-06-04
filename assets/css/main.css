@@ -27,7 +27,9 @@ body > div.container-fluid {
   padding: 0px 0px 0px 0px;
 }
 
+
 @media screen and (max-width: 1000px) {
+
   #wrapper {
     width: auto;
     margin-top: 0px;
