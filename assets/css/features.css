@@ -22,11 +22,23 @@ section {
   scroll-snap-align: end;
   position: relative;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 p {
   padding:10px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
 }
 
 .col-6 {
@@ -42,6 +54,13 @@ p {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 16pt;
+}
+
+.sectionTitles {
+  text-align:left;
+  /* display: block; */
+  top: 95%;
+  left: 2%;
 }
 
 /*About CSS*/
@@ -62,13 +81,6 @@ p {
   width: 100%;
 }
 
-#about-title {
-  text-align:left;
-  /* display: block; */
-  top: 95%;
-  left: 2%;
-}
-
 #hello {
   text-align: center;
   margin-top: 300px;
@@ -80,13 +92,6 @@ p {
 #education {
   background-color: #be2431;
   width: 100%;
-}
-
-#education-title {
-  text-align:left;
-  /* display: block; */
-  top: 95%;
-  left: 2%;
 }
 
 .educationAccomplishments {
@@ -107,39 +112,26 @@ p {
   margin-left: 10px;
 }
 
-/*Experience CSS  */
+/*Experience CSS*/
 
 #experience {
   background-color: #009acd;
   width: 100%;
 }
 
-#experience-title {
-  text-align:left;
-  /* display: block; */
-  top: 95%;
-  left: 2%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-left: 15px;
-  /* visibility: hidden; */
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.companyName {
   text-align: center;
-  color: white;
-  width: 100%;
-  left: 0;
-  font-size: calc(1rem + 3vw);
+  padding: 5px;
+}
+
+.positionTitle {
+  text-align: center;
+}
+
+/*Technologies CSS*/
+
+#technologies {
+  background: #fd91e7;
 }
 
 @media screen and (max-width: 1000px) {
@@ -156,19 +148,12 @@ h1 {
   }
 
   p {
-    padding: 0px 5px 5px 5px;
+    padding: 0px 10px 10px 10px;
     font-size: 12pt;
     text-align: center;
   }
 
-  .aboutParagraph {
-    padding: 0px 0px 0px 6px;
-    margin-bottom: 3px;
-  }
-
-    /*About CSS*/
-
-  #about-title {
+  .sectionTitles {
     text-align: right;
     position: static;
     padding-top: 60px;
@@ -176,14 +161,15 @@ h1 {
     margin-bottom: 0px;
   }
 
-  /*Education CSS*/
-
-  #education-title {
-    text-align: right;
-    position: static;
-    padding-top: 60px;
-    padding-right: 20px;
+  .aboutParagraph {
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 3px;
   }
+
+  /*About CSS*/
+
+
+  /*Education CSS*/
 
   #fmuLogo {
     display: none;
@@ -204,16 +190,7 @@ h1 {
     margin-top:0px;
   }
 
-
   /*Experience CSS*/
-
-  #experience-title {
-    text-align: right;
-    position: static;
-    padding-top: 60px;
-    padding-right: 20px;
-    margin-bottom: 0px;
-  }
 
 }
 
