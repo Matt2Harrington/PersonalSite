@@ -107,6 +107,20 @@ p {
   margin-left: 10px;
 }
 
+/*Experience CSS  */
+
+#experience {
+  background-color: #009acd;
+  width: 100%;
+}
+
+#experience-title {
+  text-align:left;
+  /* display: block; */
+  top: 95%;
+  left: 2%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -142,13 +156,13 @@ h1 {
   }
 
   p {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 5px 5px 5px;
     font-size: 12pt;
     text-align: center;
   }
 
   .aboutParagraph {
-    padding: 3px 0px 0px 10px;
+    padding: 0px 0px 0px 6px;
     margin-bottom: 3px;
   }
 
