@@ -49,9 +49,11 @@ $(document).ready(function() {
   document.getElementById("scholarship").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
 
 
-
+  // Experience Text
 
   document.getElementById("experienceParagraphPattons").innerHTML = "Consisted of working with Windows Server 2003, solving internet communication issues, 	computer and printer maintenance, Excel data entry and extraction, and software management.";
+  document.getElementById("experienceParagraphPattons2").innerHTML = "Learned basic troubleshooting techniques, business logic, and organization skills that would help as I grew in my computational understanding through self-learning, projects, and collegiate studies.";
+
   document.getElementById("experienceParagraphACS").innerHTML = "Worked on a team of six interns making a web-based back-end API using Go and front-end heatmap to display events that occur on servers in real time using a time-series database. Full-time internship with mentors from company. Used SCRUM methodology as well as other agile software engineering techniques.";
   document.getElementById("experienceParagraphACSProject").innerHTML = "Created heatmap API with specialty in front-end web development. Used HTML, CSS, and JavaScript to hook into an API created by team of fellow interns for ACS Technologies. Also helped create backend API. Technologies include Go, Kafka Connect, and Docker Compose environments to integrate. Used GitHub for VCS and worked full-time for eight weeks using agile methodologies in a professional environment.";
 
