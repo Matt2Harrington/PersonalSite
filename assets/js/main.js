@@ -71,18 +71,61 @@ $(document).ready(function() {
 
   // adding image and text to the Technologies section
 
+
+  // This way of adding elements to a list is more complicated than just adding
+  // them in the HTML, but I wanted to generate the content form the JacaScript
+  // since it is basic text, and can be applied to many other areas in th DOM.
+
   // this finds the correct ul for appendoing li children
   let technologyContentCoding = document.getElementById("technologyCoding");
 
+  // Java li
+
   let liJava = document.createElement('li');
 
-  // the left side describes the element created. The irght side is the id name.
+  // the left side describes the element created. The right side is the id name.
   liJava.setAttribute('data-id', "java");
   // THis sts the content of the li.
   liJava.textContent = "Java";
 
   // this appends that li to the ul that is found above.
   technologyContentCoding.appendChild(liJava);
+
+  // Python li
+
+  let liPy = document.createElement('li');
+
+  liPy.setAttribute('data-id', "python");
+  liPy.textContent = "Python";
+
+  technologyContentCoding.appendChild(liPy);
+
+  // HTML li
+
+  let liHTML = document.createElement('li');
+
+  liHTML.setAttribute('data-id', "html");
+  liHTML.textContent = "HTML";
+
+  technologyContentCoding.appendChild(liHTML);
+
+  // CSS li
+
+  let liCSS = document.createElement('li');
+
+  liCSS.setAttribute('data-id', "css");
+  liCSS.textContent = "CSS";
+
+  technologyContentCoding.appendChild(liCSS);
+
+  // JavaScript li
+
+  let liJavaScript = document.createElement('li');
+
+  liJavaScript.setAttribute('data-id', "javascript");
+  liJavaScript.textContent = "JavaScript";
+
+  technologyContentCoding.appendChild(liJavaScript);
 
 
 });

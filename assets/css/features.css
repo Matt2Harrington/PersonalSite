@@ -194,6 +194,10 @@ h1 {
   font-size: 16pt;
 }
 
+.technologyList li {
+  padding: 6px;
+}
+
 @media screen and (max-width: 1000px) {
 
   hr {
