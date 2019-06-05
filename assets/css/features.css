@@ -10,9 +10,9 @@ body {
       scroll-snap-points-y: repeat(100vh);
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory; */
-      scroll-snap-type: x mandatory;
+      /* scroll-snap-type: x mandatory; */
       scroll-snap-type: y mandatory;
-      overflow-x: scroll;
+      overflow-y: scroll;
       display: flex;
 
     background-color: #233559!important;
@@ -69,6 +69,7 @@ h1 {
   top: 95%;
   left: 2%;
 }
+
 
 /*About CSS*/
 
@@ -170,6 +171,7 @@ h1 {
   margin-top: 5px;
   font-size: 18px;
 }
+
 /*Technologies CSS*/
 
 #technologies {
@@ -243,7 +245,7 @@ h1 {
   }
 
   /*Experience CSS*/
-  
+
 }
 
 @media screen and (max-width: 360px) {
