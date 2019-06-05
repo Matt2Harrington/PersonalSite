@@ -12,6 +12,7 @@ body {
       scroll-snap-type: y mandatory; */
       /* scroll-snap-type: x mandatory; */
       scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
       overflow-y: scroll;
       display: flex;
 
@@ -30,6 +31,7 @@ section {
   position: relative;
   color: white;
   overflow-x: hidden;
+  scroll-snap-stop: always;
 }
 
 p {
@@ -102,8 +104,8 @@ h1 {
 
 #myGitHub {
   text-align: center;
-  margin-top: 50px;
-  font-size: 25px;
+  margin-top: 100px;
+  font-size: 30px;
   margin-bottom: 12px;
 }
 
@@ -215,13 +217,19 @@ h1 {
     margin-bottom: 0px;
   }
 
+  /*About CSS*/
+
   .aboutParagraph {
     padding: 0px 10px 0px 10px;
     margin-bottom: 8px;
   }
 
-  /*About CSS*/
-
+  #myGitHub {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
 
   /*Education CSS*/
 
