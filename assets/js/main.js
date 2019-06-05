@@ -40,7 +40,13 @@ $(document).ready(function() {
 
 
 
-  // adding text to the education section
+  // adding image and text to the Education section
+
+  // puts an image into an id.
+  var fmuLogo = new Image(5,5);
+  fmuLogo.src = "assets/images/cropped-Site-Icon-Full-Color-e1502396334483 white.png";
+  $("#fmuLogo").attr("src", fmuLogo.src);
+
   document.getElementById("fmuInfo").innerHTML = "B.S. in Computer Science, with a minor in Mathematics, from Francis Marion University. Located in Florence, South Carolina.";
   document.getElementById("computerScienceHonorGraduate").innerHTML = "Computer Science Honorary Graduate for the Class of 2019.";
   document.getElementById("presidentList").innerHTML = "Graduated with a cumulative 4.0 GPA, making the President's List each semester at Francis Marion University.";
@@ -49,7 +55,7 @@ $(document).ready(function() {
   document.getElementById("scholarship").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
 
 
-  // Experience Text
+  // adding image and text to the Experience section
 
   document.getElementById("experienceParagraphPattons").innerHTML = "Consisted of working with Windows Server 2003, solving internet communication issues, 	computer and printer maintenance, Excel data entry and extraction, and software management.";
   document.getElementById("experienceParagraphPattons2").innerHTML = "Learned basic troubleshooting techniques, business logic, and organization skills that would help as I grew in my computational understanding through self-learning, projects, and collegiate studies.";
@@ -63,10 +69,20 @@ $(document).ready(function() {
   document.getElementById("experienceParagraphFMUProject").innerHTML = "Engineered an Android application through Francis Marion University, for the state of South Carolina through a grant provided by SCRA, to assist local users with finding nearby health resources for medical needs. Also provided functionality to store the user’s health data locally for data logging in a journal format. Built with Java, Google Firebase, SQLite, and third-party libraries for graphically data representation. Created all imagery and logos associated with app, as well as the UX. Worked with agile methodologies and used GitHub for repository.";
 
 
+  // adding image and text to the Technologies section
 
-  // puts an image into an id.
-  var fmuLogo = new Image(5,5);
-  fmuLogo.src = "assets/images/cropped-Site-Icon-Full-Color-e1502396334483 white.png";
-  $("#fmuLogo").attr("src", fmuLogo.src);
+  // this finds the correct ul for appendoing li children
+  let technologyContentCoding = document.getElementById("technologyCoding");
+
+  let liJava = document.createElement('li');
+
+  // the left side describes the element created. The irght side is the id name.
+  liJava.setAttribute('data-id', "java");
+  // THis sts the content of the li.
+  liJava.textContent = "Java";
+
+  // this appends that li to the ul that is found above.
+  technologyContentCoding.appendChild(liJava);
+
 
 });

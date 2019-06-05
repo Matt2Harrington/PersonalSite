@@ -178,6 +178,13 @@ h1 {
 
 #technologies {
   background: #fd91e7;
+  width: 100%;
+}
+
+.technologyTitle {
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 1000px) {
