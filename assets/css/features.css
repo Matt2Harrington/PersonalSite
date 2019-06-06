@@ -85,12 +85,11 @@ h1 {
   /* margin-left: auto;
   margin-right: auto; */
   /* height: 100px; */
-  padding: 0px;
+  padding: 10px;
   display: block;
   margin-top: 70px;
   margin-left: 10px;
   /* margin-top:60px; */
-  padding-bottom: 0px;
   height: 100px;
   width: 100px;
 }
@@ -100,10 +99,9 @@ h1 {
   width: 100%;
 }
 
-#hello {
+.aboutTitle {
   text-align: center;
-  margin-top: 300px;
-  top: 0%;
+  padding: 5px;
 }
 
 .aboutParagraph {
@@ -152,6 +150,7 @@ h1 {
 
 .companyName {
   text-align: center;
+  margin-top: 7px;
   padding: 5px;
 }
 
@@ -172,7 +171,7 @@ h1 {
 }
 
 .experienceLinks:hover {
-  color: black;
+  color: darkslategray;
   text-decoration: none;
 }
 
@@ -180,7 +179,7 @@ h1 {
   text-align: center;
   margin-bottom: 12px;
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 /*Technologies CSS*/
@@ -212,11 +211,13 @@ h1 {
   hr {
       display: block!important;
       overflow: hidden!important;
-      border-style: inset!important;
+      border-style: solid!important;
+      border-top: none!important;
       border-width: 1px!important;
       width: 80%;
       margin-left: auto;
       margin-right: auto;
+      color: white!important;
   }
 
   .row {
@@ -251,7 +252,6 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 0px;
     margin-bottom: 10px;
     margin-top:0px;
   }
