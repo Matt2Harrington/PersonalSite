@@ -192,21 +192,21 @@ $(document).ready(function() {
 
   // Docker
 
-  let liDocker = document.createElement('li');
-
-  liDocker.setAttribute('data-id', "docker");
-  liDocker.textContent = "Docker Compose";
-
-  technologyContentCoding.appendChild(liDocker);
+  // let liDocker = document.createElement('li');
+  //
+  // liDocker.setAttribute('data-id', "docker");
+  // liDocker.textContent = "Docker Compose";
+  //
+  // technologyContentCoding.appendChild(liDocker);
 
   // Kafka
 
-  let liKafka = document.createElement('li');
-
-  liKafka.setAttribute('data-id', "kafka");
-  liKafka.textContent = "Kafka Connect";
-
-  technologyContentCoding.appendChild(liKafka);
+  // let liKafka = document.createElement('li');
+  //
+  // liKafka.setAttribute('data-id', "kafka");
+  // liKafka.textContent = "Kafka Connect";
+  //
+  // technologyContentCoding.appendChild(liKafka);
 
   // Couchbase
 
@@ -298,12 +298,12 @@ $(document).ready(function() {
 
   // R Studio
 
-  let liRStudio = document.createElement('li');
-
-  liRStudio.setAttribute('data-id', "rstudio");
-  liRStudio.textContent = "R Studio";
-
-  technologyContentEnvironment.appendChild(liRStudio);
+  // let liRStudio = document.createElement('li');
+  //
+  // liRStudio.setAttribute('data-id', "rstudio");
+  // liRStudio.textContent = "R Studio";
+  //
+  // technologyContentEnvironment.appendChild(liRStudio);
 
   // VS Code
 

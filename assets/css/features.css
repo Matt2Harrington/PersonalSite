@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -78,12 +82,17 @@ h1 {
 #mattAboutPhoto {
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:60px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* height: 100px; */
+  padding: 0px;
+  display: block;
+  margin-top: 70px;
+  margin-left: 10px;
+  /* margin-top:60px; */
   padding-bottom: 0px;
-  height: 175px;
-  width: 175px;
+  height: 100px;
+  width: 100px;
 }
 
 #about {
@@ -237,6 +246,16 @@ h1 {
 
   /*About CSS*/
 
+  #mattAboutPhoto {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top:0px;
+  }
+
   .aboutParagraph {
     padding: 0px 10px 0px 10px;
     margin-bottom: 8px;
@@ -252,7 +271,14 @@ h1 {
   /*Education CSS*/
 
   #fmuLogo {
-    display: none;
+    /* display: none; */
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top:0px;
   }
 
   .educationAccomplishments {
@@ -261,14 +287,7 @@ h1 {
     font-size: 14pt;
   }
 
-  #mattAboutPhoto {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-    margin-top:0px;
-  }
+
 
   /*Technologies CSS*/
 
