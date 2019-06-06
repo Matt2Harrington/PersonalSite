@@ -40,7 +40,13 @@ $(document).ready(function() {
 
 
 
-  // adding text to the education section
+  // adding image and text to the Education section
+
+  // puts an image into an id.
+  var fmuLogo = new Image(5,5);
+  fmuLogo.src = "assets/images/cropped-Site-Icon-Full-Color-e1502396334483 white.png";
+  $("#fmuLogo").attr("src", fmuLogo.src);
+
   document.getElementById("fmuInfo").innerHTML = "B.S. in Computer Science, with a minor in Mathematics, from Francis Marion University. Located in Florence, South Carolina.";
   document.getElementById("computerScienceHonorGraduate").innerHTML = "Computer Science Honorary Graduate for the Class of 2019.";
   document.getElementById("presidentList").innerHTML = "Graduated with a cumulative 4.0 GPA, making the President's List each semester at Francis Marion University.";
@@ -49,7 +55,7 @@ $(document).ready(function() {
   document.getElementById("scholarship").innerHTML = "Given ACS Technologies Scholarship for Computer Science curriculum performance.";
 
 
-  // Experience Text
+  // adding image and text to the Experience section
 
   document.getElementById("experienceParagraphPattons").innerHTML = "Consisted of working with Windows Server 2003, solving internet communication issues, 	computer and printer maintenance, Excel data entry and extraction, and software management.";
   document.getElementById("experienceParagraphPattons2").innerHTML = "Learned basic troubleshooting techniques, business logic, and organization skills that would help as I grew in my computational understanding through self-learning, projects, and collegiate studies.";
@@ -63,10 +69,384 @@ $(document).ready(function() {
   document.getElementById("experienceParagraphFMUProject").innerHTML = "Engineered an Android application through Francis Marion University, for the state of South Carolina through a grant provided by SCRA, to assist local users with finding nearby health resources for medical needs. Also provided functionality to store the user’s health data locally for data logging in a journal format. Built with Java, Google Firebase, SQLite, and third-party libraries for graphically data representation. Created all imagery and logos associated with app, as well as the UX. Worked with agile methodologies and used GitHub for repository.";
 
 
+  // adding image and text to the Technologies section
 
-  // puts an image into an id.
-  var fmuLogo = new Image(5,5);
-  fmuLogo.src = "assets/images/cropped-Site-Icon-Full-Color-e1502396334483 white.png";
-  $("#fmuLogo").attr("src", fmuLogo.src);
+
+  // This way of adding elements to a list is more complicated than just adding
+  // them in the HTML, but I wanted to generate the content form the JacaScript
+  // since it is basic text, and can be applied to many other areas in th DOM.
+
+  // this finds the correct ul for appendoing li children
+  let technologyContentCoding = document.getElementById("technologyCoding");
+
+  // Java li
+
+  let liJava = document.createElement('li');
+
+  // the left side describes the element created. The right side is the id name.
+  liJava.setAttribute('data-id', "java");
+  // THis sts the content of the li.
+  liJava.textContent = "Java";
+
+  // this appends that li to the ul that is found above.
+  technologyContentCoding.appendChild(liJava);
+
+  // Python li
+
+  let liPy = document.createElement('li');
+
+  liPy.setAttribute('data-id', "python");
+  liPy.textContent = "Python";
+
+  technologyContentCoding.appendChild(liPy);
+
+  // HTML li
+
+  let liHTML = document.createElement('li');
+
+  liHTML.setAttribute('data-id', "html");
+  liHTML.textContent = "HTML";
+
+  technologyContentCoding.appendChild(liHTML);
+
+  // CSS li
+
+  let liCSS = document.createElement('li');
+
+  liCSS.setAttribute('data-id', "css");
+  liCSS.textContent = "CSS";
+
+  technologyContentCoding.appendChild(liCSS);
+
+  // JavaScript li
+
+  let liJavaScript = document.createElement('li');
+
+  liJavaScript.setAttribute('data-id', "javascript");
+  liJavaScript.textContent = "JavaScript/JQuery";
+
+  technologyContentCoding.appendChild(liJavaScript);
+
+  // Bootstrap li
+
+  let liBootstrap = document.createElement('li');
+
+  liBootstrap.setAttribute('data-id', "bootstrap");
+  liBootstrap.textContent = "Bootstrap 4";
+
+  technologyContentCoding.appendChild(liBootstrap);
+
+  // MySQL
+
+  let liMySQL = document.createElement('li');
+
+  liMySQL.setAttribute('data-id', "mysql");
+  liMySQL.textContent = "MySQL";
+
+  technologyContentCoding.appendChild(liMySQL);
+
+  // SQLite
+
+  let liSQLite = document.createElement('li');
+
+  liSQLite.setAttribute('data-id', "sqlite");
+  liSQLite.textContent = "SQLite";
+
+  technologyContentCoding.appendChild(liSQLite);
+
+  // PHP
+
+  let liPHP = document.createElement('li');
+
+  liPHP.setAttribute('data-id', "php");
+  liPHP.textContent = "PHP";
+
+  technologyContentCoding.appendChild(liPHP);
+
+  // NoSQL
+
+  let liNoSQL = document.createElement('li');
+
+  liNoSQL.setAttribute('data-id', "nosql");
+  liNoSQL.textContent = "NoSQL";
+
+  technologyContentCoding.appendChild(liNoSQL);
+
+  // Firebase
+
+  let liFirebase = document.createElement('li');
+
+  liFirebase.setAttribute('data-id', "firebase");
+  liFirebase.textContent = "Firebase";
+
+  technologyContentCoding.appendChild(liFirebase);
+
+  // GitHub
+
+  let liGitHub = document.createElement('li');
+
+  liGitHub.setAttribute('data-id', "github");
+  liGitHub.textContent = "GitHub";
+
+  technologyContentCoding.appendChild(liGitHub);
+
+  // Docker
+
+  let liDocker = document.createElement('li');
+
+  liDocker.setAttribute('data-id', "docker");
+  liDocker.textContent = "Docker Compose";
+
+  technologyContentCoding.appendChild(liDocker);
+
+  // Kafka
+
+  let liKafka = document.createElement('li');
+
+  liKafka.setAttribute('data-id', "kafka");
+  liKafka.textContent = "Kafka Connect";
+
+  technologyContentCoding.appendChild(liKafka);
+
+  // Couchbase
+
+  let liCouchbase = document.createElement('li');
+
+  liCouchbase.setAttribute('data-id', "couchbase");
+  liCouchbase.textContent = "Couchbase";
+
+  technologyContentCoding.appendChild(liCouchbase);
+
+  // UML
+
+  let liUML = document.createElement('li');
+
+  liUML.setAttribute('data-id', "uml");
+  liUML.textContent = "UML";
+
+  technologyContentCoding.appendChild(liUML);
+
+  // end of Programming Skills
+
+  // start of Technology Environments
+
+  // this finds the correct ul for appendoing li children
+  let technologyContentEnvironment = document.getElementById("technologyEnvironments");
+
+  // Android Studio
+
+  let liAndroidStudio = document.createElement('li');
+
+  liAndroidStudio.setAttribute('data-id', "android-studio");
+  liAndroidStudio.textContent = "Android Studio";
+
+  technologyContentEnvironment.appendChild(liAndroidStudio);
+
+  // IntelliJ
+
+  let liIntelliJ = document.createElement('li');
+
+  liIntelliJ.setAttribute('data-id', "intellij");
+  liIntelliJ.textContent = "IntelliJ";
+
+  technologyContentEnvironment.appendChild(liIntelliJ);
+
+  // PyCharm
+
+  let liPyCharm = document.createElement('li');
+
+  liPyCharm.setAttribute('data-id', "pycharm");
+  liPyCharm.textContent = "PyCharm";
+
+  technologyContentEnvironment.appendChild(liPyCharm);
+
+  // PyCharm
+
+  let liAtom = document.createElement('li');
+
+  liAtom.setAttribute('data-id', "atom");
+  liAtom.textContent = "Atom";
+
+  technologyContentEnvironment.appendChild(liAtom);
+
+  // Command Line
+
+  let liCL = document.createElement('li');
+
+  liCL.setAttribute('data-id', "cl");
+  liCL.textContent = "Terminal/Command Line";
+
+  technologyContentEnvironment.appendChild(liCL);
+
+  // Slack
+
+  let liSlack = document.createElement('li');
+
+  liSlack.setAttribute('data-id', "slack");
+  liSlack.textContent = "Slack";
+
+  technologyContentEnvironment.appendChild(liSlack);
+
+  // MATLAB
+
+  let liMATLAB = document.createElement('li');
+
+  liMATLAB.setAttribute('data-id', "matlab");
+  liMATLAB.textContent = "MATLAB";
+
+  technologyContentEnvironment.appendChild(liMATLAB);
+
+  // R Studio
+
+  let liRStudio = document.createElement('li');
+
+  liRStudio.setAttribute('data-id', "rstudio");
+  liRStudio.textContent = "R Studio";
+
+  technologyContentEnvironment.appendChild(liRStudio);
+
+  // VS Code
+
+  let liVSCode = document.createElement('li');
+
+  liVSCode.setAttribute('data-id', "vscode");
+  liVSCode.textContent = "Visual Studio Code";
+
+  technologyContentEnvironment.appendChild(liVSCode);
+
+  // Photoshop CC
+
+  let liPhotoshop = document.createElement('li');
+
+  liPhotoshop.setAttribute('data-id', "photoshop");
+  liPhotoshop.textContent = "Photoshop CC";
+
+  technologyContentEnvironment.appendChild(liPhotoshop);
+
+  // Lightroom CC
+
+  let liLightroom = document.createElement('li');
+
+  liLightroom.setAttribute('data-id', "lightroom");
+  liLightroom.textContent = "Lightroom 5/CC";
+
+  technologyContentEnvironment.appendChild(liLightroom);
+
+  // Microsoft Office
+
+  let liMSOffice = document.createElement('li');
+
+  liMSOffice.setAttribute('data-id', "microsoft-office");
+  liMSOffice.textContent = "Microsoft Office";
+
+  technologyContentEnvironment.appendChild(liMSOffice);
+
+  // Creately
+
+  let liCreately = document.createElement('li');
+
+  liCreately.setAttribute('data-id', "creately");
+  liCreately.textContent = "Creately";
+
+  technologyContentEnvironment.appendChild(liCreately);
+
+  // Agile
+
+  let liAgile = document.createElement('li');
+
+  liAgile.setAttribute('data-id', "agile");
+  liAgile.textContent = "Agile Methodologies";
+
+  technologyContentEnvironment.appendChild(liAgile);
+
+  // SCRUM
+
+  let liSCRUM = document.createElement('li');
+
+  liSCRUM.setAttribute('data-id', "agile");
+  liSCRUM.textContent = "SCRUM";
+
+  technologyContentEnvironment.appendChild(liSCRUM);
+
+  // end of Technologies Environments
+
+  // start of Exposure With
+
+  let technologyContentExposed = document.getElementById("technologyExposed");
+
+  // React
+
+  let liReact = document.createElement('li');
+
+  liReact.setAttribute('data-id', "react");
+  liReact.textContent = "React";
+
+  technologyContentExposed.appendChild(liReact);
+
+  // Angular
+
+  let liAngular = document.createElement('li');
+
+  liAngular.setAttribute('data-id', "angular");
+  liAngular.textContent = "Angular";
+
+  technologyContentExposed.appendChild(liAngular);
+
+  // Vue.js
+
+  let liVue = document.createElement('li');
+
+  liVue.setAttribute('data-id', "vue-js");
+  liVue.textContent = "Vue.js";
+
+  technologyContentExposed.appendChild(liVue);
+
+  // node.js
+
+  let liNodeJS = document.createElement('li');
+
+  liNodeJS.setAttribute('data-id', "node-js");
+  liNodeJS.textContent = "node.js";
+
+  technologyContentExposed.appendChild(liNodeJS);
+
+  // C
+
+  let liC = document.createElement('li');
+
+  liC.setAttribute('data-id', "c");
+  liC.textContent = "C";
+
+  technologyContentExposed.appendChild(liC);
+
+  // Objective-C
+
+  let liObjectiveC = document.createElement('li');
+
+  liObjectiveC.setAttribute('data-id', "objective-c");
+  liObjectiveC.textContent = "Objective-C";
+
+  technologyContentExposed.appendChild(liObjectiveC);
+
+  // Swift
+
+  let liSwift = document.createElement('li');
+
+  liSwift.setAttribute('data-id', "swift");
+  liSwift.textContent = "Swift";
+
+  technologyContentExposed.appendChild(liSwift);
+
+  // Xcode
+
+  let liXcode = document.createElement('li');
+
+  liXcode.setAttribute('data-id', "xcode");
+  liXcode.textContent = "Xcode";
+
+  technologyContentExposed.appendChild(liXcode);
+
+
+
 
 });

@@ -178,6 +178,24 @@ h1 {
 
 #technologies {
   background: #fd91e7;
+  width: 100%;
+}
+
+.technologyTitle {
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.technologyList {
+  list-style: none;
+  text-align: center;
+  margin-right: 50px;
+  font-size: 16pt;
+}
+
+.technologyList li {
+  padding: 6px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -252,7 +270,11 @@ h1 {
     margin-top:0px;
   }
 
-  /*Experience CSS*/
+  /*Technologies CSS*/
+
+  .technologyTitle {
+    margin-top: 0px;
+  }
 
 }
 
