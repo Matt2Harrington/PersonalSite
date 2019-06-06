@@ -25,20 +25,25 @@ $(document).ready(function() {
 
   // adding paragraph to about section
   document.getElementById("firstParagraphAbout").innerHTML = "Hello, my name is Matt Harrington," + " and I am Computer Science Graduate from Francis Marion University."
-  + " I love all types of technology, and working with it." + " Over the past fifteen years of my twenty-two year"
+  + " I love all types of technology!" + " Over the past fifteen years of my twenty-two year"
   + "  old life, I have been thankful enough to be exposed to technology" + "  that has changed my life for the better.";
 
   document.getElementById("secondParagraphAbout").innerHTML = "Even when I was in elementary school, I loved mathematics. Over the years,"
-  + "  this passion of science and numbers lead me to pursure a field of engineering." + "  The coolest part was that I had a piece of tech in my hands all of those years as well."
+  + "  this passion of science and math lead me to pursure a field of engineering." + "  I always had a piece of tech in my hands all of those years as well."
   + "  This lead to me making a decison to pursue a computer science degree.";
 
 
   document.getElementById("thirdParagraphAbout").innerHTML = "Since making that declaration, I have been driven, since day one, to"
-  + "  give college my absolute 100%. From the first day of my freshman year," + "  until the last exam, I have and will give it my all. I want to do more"
-  + "  than what is accepted. I want to work harder than the norm, and deliver" + " myself a life I have always dreamed about."
+  + "  give college my absolute 100%. From the first day of my freshman year," + "  until the last exam, I gave it my all! I want to do more"
+  + "  than what is accepted. I strive to always give 110%, regardless of task. I want to work harder than the standard quo, and deliver" + " myself a life I have always dreamed about."
 
+  document.getElementById("firstParagraphMyHobbies").innerHTML = "For many, many years, photography has been my favorite, and most important hobby. I truly love it,"
+  + " and have created a small business with it for myself." + " I am self-taught, but it comes from my grandfather. He loved photography while I was growing up, and it translated over to a love for life within myself."
+  + " He helped me with equipment, and learning how to capture a photo before the shutter is even opened." + " He gave me my eye, and that is the most important part."
+  + " The rest are just tools that can further help a photo's quality, but this is the basis of my ideology." + " I beleive that the most important"
+  + " part of any process comes from within;" + " the rest is just a tool. My hobbies have benefited to so much in my life and I would not be the person" + " I am today within my life going exactly how it has gone.";
 
-
+  document.getElementById("firstParagraphMyProgress").innerHTML = "Hi";
 
   // adding image and text to the Education section
 
@@ -192,21 +197,21 @@ $(document).ready(function() {
 
   // Docker
 
-  let liDocker = document.createElement('li');
-
-  liDocker.setAttribute('data-id', "docker");
-  liDocker.textContent = "Docker Compose";
-
-  technologyContentCoding.appendChild(liDocker);
+  // let liDocker = document.createElement('li');
+  //
+  // liDocker.setAttribute('data-id', "docker");
+  // liDocker.textContent = "Docker Compose";
+  //
+  // technologyContentCoding.appendChild(liDocker);
 
   // Kafka
 
-  let liKafka = document.createElement('li');
-
-  liKafka.setAttribute('data-id', "kafka");
-  liKafka.textContent = "Kafka Connect";
-
-  technologyContentCoding.appendChild(liKafka);
+  // let liKafka = document.createElement('li');
+  //
+  // liKafka.setAttribute('data-id', "kafka");
+  // liKafka.textContent = "Kafka Connect";
+  //
+  // technologyContentCoding.appendChild(liKafka);
 
   // Couchbase
 
@@ -298,12 +303,12 @@ $(document).ready(function() {
 
   // R Studio
 
-  let liRStudio = document.createElement('li');
-
-  liRStudio.setAttribute('data-id', "rstudio");
-  liRStudio.textContent = "R Studio";
-
-  technologyContentEnvironment.appendChild(liRStudio);
+  // let liRStudio = document.createElement('li');
+  //
+  // liRStudio.setAttribute('data-id', "rstudio");
+  // liRStudio.textContent = "R Studio";
+  //
+  // technologyContentEnvironment.appendChild(liRStudio);
 
   // VS Code
 
