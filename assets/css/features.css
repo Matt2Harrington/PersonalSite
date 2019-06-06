@@ -270,7 +270,11 @@ h1 {
     margin-top:0px;
   }
 
-  /*Experience CSS*/
+  /*Technologies CSS*/
+
+  .technologyTitle {
+    margin-top: 0px;
+  }
 
 }
 
