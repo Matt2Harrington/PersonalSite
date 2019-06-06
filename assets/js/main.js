@@ -446,7 +446,14 @@ $(document).ready(function() {
 
   technologyContentExposed.appendChild(liXcode);
 
+  // adding
 
+  let liAdding = document.createElement('li');
+
+  liAdding.setAttribute('data-id', "adding");
+  liAdding.textContent = "Always Adding More...";
+
+  technologyContentExposed.appendChild(liAdding);
 
 
 });
