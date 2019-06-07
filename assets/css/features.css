@@ -109,6 +109,10 @@ h1 {
   padding: 5px;
 }
 
+.hobbyTitle {
+  text-align: center;
+}
+
 .aboutParagraph {
   padding: 0px 10px 10px 10px;
   margin-bottom: 8px;

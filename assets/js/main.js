@@ -114,13 +114,34 @@ $('a[href*="#"]')
   + "  give college my absolute 100%. From the first day of my freshman year," + "  until the last exam, I gave it my all! I want to do more"
   + "  than what is accepted. I strive to always give 110%, regardless of task. I want to work harder than the standard quo, and deliver" + " myself a life I have always dreamed about."
 
-  document.getElementById("firstParagraphMyHobbies").innerHTML = "For many, many years, photography has been my favorite, and most important hobby. I truly love it,"
-  + " and have created a small business with it for myself." + " I am self-taught, but it comes from my grandfather. He loved photography while I was growing up, and it translated over to a love for life within myself."
-  + " He helped me with equipment, and learning how to capture a photo before the shutter is even opened." + " He gave me my eye, and that is the most important part."
-  + " The rest are just tools that can further help a photo's quality, but this is the basis of my ideology." + " I beleive that the most important"
-  + " part of any process comes from within;" + " the rest is just a tool. My hobbies have benefited to so much in my life and I would not be the person" + " I am today within my life going exactly how it has gone.";
+  // My Progress
 
-  document.getElementById("firstParagraphMyProgress").innerHTML = "Hi";
+  document.getElementById("firstParagraphMyProgress").innerHTML = "My first introduction into Computer Science was learning basic HTML, CSS, and JavaScript. This was in 2013, and was surrounded by a lack of education"
+  + " seemed to follow me until college. I took a web design course in High School that made me fall in love with the computer in a way I hadn't before. This started a path that has been nothing short of perfect.";
+
+  document.getElementById("secondParagraphMyProgress").innerHTML = "As I began college in 2015, I was introduced to Java in my basic coding course. I had no idea at the time, but the next four years would be my most stressful,"
+  + " but my most rewarding. I grew to love social environments, taking leadership positions whenever possible. This only built upon the natural business sense that I have accumulated since being a kid.";
+
+  document.getElementById("thirdParagraphMyProgress").innerHTML = "Since I can remember, I have watched and looked up to more mature and knowledgable individuals, whether it be in person or through other platforms."
+  + "I have watched Apple's WWDC conference each year since 2008 for example. As I got to the level of building an Android application as my senior project, I took everything I've learned and put it all together to "
+  + " try to do my absolute best for myself, and the people around me. A lifetime of learning paying off in one way or another.";
+
+  // My Hobbies
+
+  document.getElementById("firstParagraphMyHobbies").innerHTML = "For many photography has been my favorite hobby. I love it."
+  + " Years ago, I even created a small business with it for myself." + " I am self-taught, but it comes from my grandfather. He loved photography while I was growing up, and it translated over to a love for life within myself."
+  + " He gave me my eye, and that is the most important part of photography. It's what comes from within.";
+  // + " My hobbies have benefited to so much in my life and I would not be the person" + " I am today within my life going exactly how it has gone.";
+
+  document.getElementById("secondParagraphMyHobbies").innerHTML = "My love for music goes back to childhood, but it grew after I learned how to play bass guitar."
+  + " I also self-taught myself how to play bass. Over the past six years, my experience of computer science only helped me see the similarities between code and sheet music.";
+
+
+  document.getElementById("thirdParagraphMyHobbies").innerHTML = "My passion for health began in 2014 after a lifetime of weight issues. The devotion to my health has transcended my lifestyle in ways I"
+  + " would never be able to imagine years ago. Workouts, a steady diet of grilled chicken, and the reminder that the brain benefits just as much as the body helped me through the most stressful situations"
+  + " in college.";
+
+
 
   // adding image and text to the Education section
 
