@@ -547,4 +547,5 @@ $('a[href*="#"]')
 
   technologyContentExposed.appendChild(liAdding);
 
+
 });

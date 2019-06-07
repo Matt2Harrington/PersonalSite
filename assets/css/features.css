@@ -198,8 +198,9 @@ h1 {
 /*Technologies CSS*/
 
 #technologies {
-  /* background: #fd91e7; */
-  background: #9b59b6;
+  /* background: #fd91e7;
+  #9b59b6*/
+  background: #a05ebb;
   width: 100%;
 }
 
@@ -221,7 +222,7 @@ h1 {
   list-style: none;
   text-align: center;
   margin-right: 50px;
-  font-size: 16pt;
+  font-size: 15pt;
 }
 
 .technologyList li {
@@ -277,7 +278,7 @@ h1 {
     margin-bottom: 10px;
     margin-top:0px;
   }
-  
+
   .aboutParagraph {
     padding: 0px 10px 0px 10px;
     margin-bottom: 8px;
@@ -321,7 +322,7 @@ h1 {
     margin-bottom: 0px;
     margin-top:0px;
   }
-
+  
   /*Technologies CSS*/
 
   .technologyTitle {
