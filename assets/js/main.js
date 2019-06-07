@@ -17,11 +17,88 @@ $(document).ready(function() {
 
 });
 
+  // Scrollify for each section
+
+  $(function() {
+    $.scrollify({
+      section : "section",
+    });
+  });
+
+// Add smooth scrolling to all links  KEPT FOR REFERENCE
+//
+//   $("a").on('click', function(event) {
+//
+//   // Scroll to specific values
+//   // scrollTo is the same
+//   window.scroll({
+//     top: 2500,
+//     left: 0,
+//     behavior: 'smooth'
+//   });
+//
+//   // Scroll certain amounts from current position
+//   window.scrollBy({
+//     top: 100, // could be negative value
+//     left: 0,
+//     behavior: 'smooth'
+//   });
+//
+//   event.preventDefault();
+//
+//   // Store hash
+//   var hash = this.hash;
+//
+//   // Scroll to a certain element
+//   document.querySelector(hash).scrollIntoView({
+//     behavior: 'smooth'
+//   });
+//
+// });
+
+// Select all links with hashes in the navbar and the sidebar
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+  // About Section
+
   // puts an image into an id.
   var mattAboutPhoto = new Image(5,5);
   mattAboutPhoto.src = "assets/images/13082174.jpeg";
   $("#mattAboutPhoto").attr("src", mattAboutPhoto.src);
-
 
   // adding paragraph to about section
   document.getElementById("firstParagraphAbout").innerHTML = "Hello, my name is Matt Harrington," + " and I am Computer Science Graduate from Francis Marion University."
@@ -62,6 +139,11 @@ $(document).ready(function() {
 
   // adding image and text to the Experience section
 
+  // puts an image into an id.
+  var mattExperiencePhoto = new Image(5,5);
+  mattExperiencePhoto.src = "assets/images/briefcase.png";
+  $("#briefcase").attr("src", mattExperiencePhoto.src);
+
   document.getElementById("experienceParagraphPattons").innerHTML = "Consisted of working with Windows Server 2003, solving internet communication issues, 	computer and printer maintenance, Excel data entry and extraction, and software management.";
   document.getElementById("experienceParagraphPattons2").innerHTML = "Learned basic troubleshooting techniques, business logic, and organization skills that would help as I grew in my computational understanding through self-learning, projects, and collegiate studies.";
 
@@ -75,6 +157,11 @@ $(document).ready(function() {
 
 
   // adding image and text to the Technologies section
+
+  // puts an image into an id.
+  var mattTechnologiesPhoto = new Image(5,5);
+  mattTechnologiesPhoto.src = "assets/images/hammer.png";
+  $("#hammer").attr("src", mattTechnologiesPhoto.src);
 
 
   // This way of adding elements to a list is more complicated than just adding

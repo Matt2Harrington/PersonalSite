@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 * {
@@ -15,12 +15,17 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory; */
       /* scroll-snap-type: x mandatory; */
-      scroll-snap-type: y mandatory;
-      -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+      /* scroll-snap-type: y mandatory; */
+      /* -webkit-overflow-scrolling: touch;/* /* Needed to work on iOS Safari */
       overflow-y: scroll;
       display: flex;
 
     background-color: #233559!important;
+}
+
+#wrapper {
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 hr {
@@ -60,7 +65,7 @@ h1 {
 
 .row {
   margin-right: 0px;
-  padding: 30px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 .col {
@@ -87,7 +92,7 @@ h1 {
   /* height: 100px; */
   padding: 10px;
   display: block;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-left: 10px;
   /* margin-top:60px; */
   height: 100px;
@@ -134,10 +139,10 @@ h1 {
 }
 
 #fmuLogo {
-  height: 100px;
+  height: 80px;
   padding: 15px;
   display: block;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-left: 10px;
 }
 
@@ -148,9 +153,17 @@ h1 {
   width: 100%;
 }
 
+#briefcase {
+  height: 80px;
+  padding: 15px;
+  display: block;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
 .companyName {
   text-align: center;
-  margin-top: 7px;
+  margin-top: 0px;
   padding: 5px;
 }
 
@@ -185,13 +198,22 @@ h1 {
 /*Technologies CSS*/
 
 #technologies {
-  background: #fd91e7;
+  /* background: #fd91e7; */
+  background: #9b59b6;
   width: 100%;
+}
+
+#hammer {
+  height: 80px;
+  padding: 15px;
+  display: block;
+  margin-top: 60px;
+  margin-left: 10px;
 }
 
 .technologyTitle {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
   padding: 5px;
 }
 
@@ -277,7 +299,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top:0px;
   }
 
@@ -287,12 +309,36 @@ h1 {
     font-size: 14pt;
   }
 
+  /*Experience CSS*/
+
+  #briefcase {
+    /* display: none; */
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top:0px;
+  }
+
 
 
   /*Technologies CSS*/
 
   .technologyTitle {
     margin-top: 0px;
+  }
+
+  #hammer {
+    /* display: none; */
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top:0px;
   }
 
 }
