@@ -141,8 +141,6 @@ $('a[href*="#"]')
   + " would never be able to imagine years ago. Workouts, a steady diet of grilled chicken, and the reminder that the brain benefits just as much as the body helped me through the most stressful situations"
   + " in college.";
 
-
-
   // adding image and text to the Education section
 
   // puts an image into an id.
