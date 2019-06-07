@@ -1,5 +1,5 @@
 html {
-
+  /* scroll-behavior: smooth; */
 }
 
 * {
@@ -8,9 +8,19 @@ html {
 
 body {
   font-family: sans-serif;
-  overflow-y: scroll;
-  display: flex;
-  background-color: #233559!important;
+  /* -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory; */
+      /* scroll-snap-type: x mandatory; */
+      /* scroll-snap-type: y mandatory; */
+      /* -webkit-overflow-scrolling: touch;/* /* Needed to work on iOS Safari */
+      overflow-y: scroll;
+      display: flex;
+
+    background-color: #233559!important;
 }
 
 #wrapper {
@@ -22,12 +32,15 @@ hr {
   display: none;
 }
 
+
 section {
   border-bottom: 1px solid white;
   height: 100vh;
+  scroll-snap-align: end;
   position: relative;
   color: white;
   overflow-x: hidden;
+  scroll-snap-stop: always;
 }
 
 p {
@@ -152,28 +165,6 @@ h1 {
   margin-left: 10px;
 }
 
-#github-acs {
-  height: 25px;
-  margin-right: 10px;
-  padding-bottom: 5px;
-}
-
-#github-fmu-app {
-  height: 25px;
-  margin-right: 10px;
-  padding-bottom: 5px;
-}
-
-#github-fmu-site {
-  height: 25px;
-  margin-right: 10px;
-  padding-bottom: 5px;
-}
-
-/* #appFMULink {
-  margin-top:10px;
-} */
-
 .companyName {
   text-align: center;
   margin-top: 0px;
@@ -191,7 +182,7 @@ h1 {
 
 .experienceLinks {
   text-decoration: none;
-  color: #e8f0f6;
+  color: white;
   text-align: center;
   font-weight: bold;
 }
@@ -205,7 +196,6 @@ h1 {
   text-align: center;
   margin-bottom: 12px;
   margin-top: 5px;
-  margin-right: 5px;
   font-size: 25px;
 }
 
