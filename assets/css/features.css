@@ -8,19 +8,9 @@ html {
 
 body {
   font-family: sans-serif;
-  /* -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
-  -ms-scroll-snap-points-y: repeat(100vh);
-      scroll-snap-points-y: repeat(100vh);
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory; */
-      /* scroll-snap-type: x mandatory; */
-      /* scroll-snap-type: y mandatory; */
-      /* -webkit-overflow-scrolling: touch;/* /* Needed to work on iOS Safari */
-      overflow-y: scroll;
-      display: flex;
-
-    background-color: #233559!important;
+  overflow-y: scroll;
+  display: flex;
+  background-color: #233559!important;
 }
 
 #wrapper {
@@ -59,10 +49,6 @@ h1 {
   font-size: calc(1rem + 3vw);
 }
 
-.col-6 {
-  /* padding: 0px 0px 0px 0px!important; */
-}
-
 .row {
   margin-right: 0px;
   padding: 10px 0px 0px 0px;
@@ -81,20 +67,15 @@ h1 {
   padding-right: 20px;
 }
 
-
 /*About CSS*/
 
 #mattAboutPhoto {
   border-radius: 50%;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* height: 100px; */
   padding: 10px;
   display: block;
   margin-top: 60px;
   margin-left: 10px;
-  /* margin-top:60px; */
   height: 100px;
   width: 100px;
 }
@@ -114,7 +95,7 @@ h1 {
 }
 
 .aboutParagraph {
-  padding: 0px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
   margin-bottom: 8px;
 }
 
@@ -124,7 +105,6 @@ h1 {
   font-size: 30px;
   margin-bottom: 12px;
 }
-
 
 /*Education CSS*/
 
@@ -138,7 +118,6 @@ h1 {
   font-size: 20pt;
   top: 50%;
   bottom: 50%;
-  /* margin-left: 350px; */
   margin-bottom: 20px;
 }
 
@@ -195,7 +174,7 @@ h1 {
 .experienceLinksDiv {
   text-align: center;
   margin-bottom: 12px;
-  margin-top: 5px;
+  margin-top: 0px;
   font-size: 25px;
 }
 
@@ -220,8 +199,6 @@ h1 {
 /*Technologies CSS*/
 
 #technologies {
-  /* background: #fd91e7;
-  #9b59b6*/
   background: #a05ebb;
   width: 100%;
 }
@@ -237,6 +214,7 @@ h1 {
 .technologyTitle {
   text-align: center;
   margin-top: 0px;
+  margin-right: 5px;
   padding: 5px;
 }
 
@@ -259,20 +237,44 @@ h1 {
   display: block;
   margin-top: 60px;
   margin-left: 10px;
+  z-index: 2;
+}
+
+#photography-soon {
+  /* top: 50%;
+  left: 50%; */
+  /* position: absolute; */
+  /* margin-left: -50px;
+  margin-top: -25px; */
+  text-align: center;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#photography-title {
+  z-index: 100;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
 }
 
 @media screen and (max-width: 1000px) {
 
   hr {
-      display: block!important;
-      overflow: hidden!important;
-      border-style: solid!important;
-      border-top: none!important;
-      border-width: 1px!important;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      color: white!important;
+    display: block!important;
+    overflow: hidden!important;
+    border-style: solid!important;
+    border-top: none!important;
+    border-width: 1px!important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white!important;
   }
 
   .row {
@@ -326,8 +328,6 @@ h1 {
   /*Education CSS*/
 
   #fmuLogo {
-    /* display: none; */
-    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -345,8 +345,6 @@ h1 {
   /*Experience CSS*/
 
   #briefcase {
-    /* display: none; */
-    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -355,8 +353,6 @@ h1 {
     margin-top:0px;
   }
 
-
-
   /*Technologies CSS*/
 
   .technologyTitle {
@@ -364,14 +360,22 @@ h1 {
   }
 
   #hammer {
-    /* display: none; */
-    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0px;
     margin-bottom: 20px;
     margin-top:0px;
+  }
+
+  /*Photography*/
+
+  #camera {
+    display: none;
+  }
+
+  #photography-title {
+    z-index: 100;
   }
 
 }
