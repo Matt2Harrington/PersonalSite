@@ -103,43 +103,43 @@ $('a[href*="#"]')
   // adding paragraph to about section
   document.getElementById("firstParagraphAbout").innerHTML = "Hello, my name is Matt Harrington," + " and I am Computer Science Graduate from Francis Marion University."
   + " I love all types of technology!" + " Over the past fifteen years of my twenty-two year"
-  + "  old life, I have been thankful enough to be exposed to technology" + "  that has changed my life for the better.";
+  + "  old life, I have been thankful enough to be exposed to technology and experiences" + "  that have changed my life for the better.";
 
-  document.getElementById("secondParagraphAbout").innerHTML = "Even when I was in elementary school, I loved mathematics. Over the years,"
-  + "  this passion of science and math lead me to pursure a field of engineering." + "  I always had a piece of tech in my hands all of those years as well."
-  + "  This lead to me making a decison to pursue a computer science degree.";
+  document.getElementById("secondParagraphAbout").innerHTML = "When I was in elementary school, I loved mathematics. Over the years"
+  + "  this passion of math and science lead me to pursure a field in engineering." + "  Since I always had a piece of tech in my hands,"
+  + "  it lead to me to pursue a computer science degree.";
 
 
-  document.getElementById("thirdParagraphAbout").innerHTML = "Since making that declaration, I have been driven, since day one, to"
-  + "  give college my absolute 100%. From the first day of my freshman year," + "  until the last exam, I gave it my all! I want to do more"
-  + "  than what is accepted. I strive to always give 110%, regardless of task. I want to work harder than the standard quo, and deliver" + " myself a life I have always dreamed about."
+  document.getElementById("thirdParagraphAbout").innerHTML = "Since making that declaration, I was driven to"
+  + "  give college my absolute 110%. From the first day of my freshman year," + "  until the last exam, I gave it my all! I want to do more"
+  + "  than what is expected. I strive to always give it my all, regardless of task. I want to work harder than the status quo, and deliver" + " myself a life I have always dreamed about."
 
   // My Progress
 
-  document.getElementById("firstParagraphMyProgress").innerHTML = "My first introduction into Computer Science was learning basic HTML, CSS, and JavaScript. This was in 2013, and was surrounded by a lack of education"
-  + " seemed to follow me until college. I took a web design course in High School that made me fall in love with the computer in a way I hadn't before. This started a path that has been nothing short of perfect.";
+  document.getElementById("firstParagraphMyProgress").innerHTML = "My first introduction into Computer Science was learning basic HTML, CSS, and JavaScript in 2013."
+  + " I took a web design course in High School that made me fall in love with the computer in a way I hadn't before. This started a path that has been nothing short of perfect.";
 
   document.getElementById("secondParagraphMyProgress").innerHTML = "As I began college in 2015, I was introduced to Java in my basic coding course. I had no idea at the time, but the next four years would be my most stressful,"
-  + " but my most rewarding. I grew to love social environments, taking leadership positions whenever possible. This only built upon the natural business sense that I have accumulated since being a kid.";
+  + " but also my most rewarding. I grew to love social environments, taking leadership positions whenever possible. This only built upon the natural business abilities that I have accumulated since childhood.";
 
   document.getElementById("thirdParagraphMyProgress").innerHTML = "Since I can remember, I have watched and looked up to more mature and knowledgable individuals, whether it be in person or through other platforms."
-  + "I have watched Apple's WWDC conference each year since 2008 for example. As I got to the level of building an Android application as my senior project, I took everything I've learned and put it all together to "
-  + " try to do my absolute best for myself, and the people around me. A lifetime of learning paying off in one way or another.";
+  + " For example, Apple's WWDC conference has been a staple each summer since 2008. As I grew to the level of building an Android application as my senior project, I took everything I had learned and ebeen exposed to through these ventures and put it all together to "
+  + " try to do my absolute best for myself, and the people around me to deliver a quality product on time. A lifetime of learning paying off in one way or another whether it was Photoshop, photography, or marketing abilites.";
 
   // My Hobbies
 
-  document.getElementById("firstParagraphMyHobbies").innerHTML = "For many photography has been my favorite hobby. I love it."
-  + " Years ago, I even created a small business with it for myself." + " I am self-taught, but it comes from my grandfather. He loved photography while I was growing up, and it translated over to a love for life within myself."
+  document.getElementById("firstParagraphMyHobbies").innerHTML = "For many years photography has been my favorite hobby."
+  + " Years ago, I even created a small business with it for myself." + " I am self-taught, but it comes from my grandfather. He loved photography while I was growing up, and it translated over to a passion for life."
   + " He gave me my eye, and that is the most important part of photography. It's what comes from within.";
   // + " My hobbies have benefited to so much in my life and I would not be the person" + " I am today within my life going exactly how it has gone.";
 
   document.getElementById("secondParagraphMyHobbies").innerHTML = "My love for music goes back to childhood, but it grew after I learned how to play bass guitar."
-  + " I also self-taught myself how to play bass. Over the past six years, my experience of computer science only helped me see the similarities between code and sheet music.";
+  + " I am self-taught and teaching myself how to play bass was another stepping stone in how to self-learn. Over the past six years, my experience of computer science only helped me see the similarities between code and music.";
 
 
   document.getElementById("thirdParagraphMyHobbies").innerHTML = "My passion for health began in 2014 after a lifetime of weight issues. The devotion to my health has transcended my lifestyle in ways I"
-  + " would never be able to imagine years ago. Workouts, a steady diet of grilled chicken, and the reminder that the brain benefits just as much as the body helped me through the most stressful situations"
-  + " in college.";
+  + " would never be able to imagine years ago. Workouts, a steady diet of grilled chicken and salads, and the reminder that the brain benefits just as much as the body helped me through the most stressful situations"
+  + " in college. Since I began in 2013, I have lost 150lbs. Each day is a new battle.";
 
   // adding image and text to the Education section
 
@@ -576,9 +576,16 @@ $('a[href*="#"]')
   let liAdding = document.createElement('li');
 
   liAdding.setAttribute('data-id', "adding");
-  liAdding.textContent = "Always Adding More...";
+  liAdding.textContent = "Always Learning More...";
 
   technologyContentExposed.appendChild(liAdding);
+
+  // Photography Section
+
+  // puts an image into an id.
+  var camera = new Image(5,5);
+  camera.src = "assets/images/camera.png";
+  $("#camera").attr("src", camera.src);
 
 
 });
