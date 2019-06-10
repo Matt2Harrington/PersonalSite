@@ -143,7 +143,7 @@ $('a[href*="#"]')
   mattExperiencePhotoACS.src = "assets/images/githublogo.png";
   $("#github-acs").attr("src", mattExperiencePhotoACS.src);
 
-  document.getElementById("experienceParagraphFMU").innerHTML = "Tasked with maintaining the SCHealthPlusMe application, create new pieces of software to help the maintainability of clinical data, educate fellow students, and oversee marketing. Created and maintained a web-based management piece of software that gives users the ability to add, remove, and access all locations entered into Firebase database. Wrote technical documentation that pairs with the source code of SCHealthPlusMe for easy maintainability and understanding. Researched new technology for future students to utilize for future iterations of the application.";
+  document.getElementById("experienceParagraphFMU").innerHTML = "Tasked with maintaining the SCHealthPlusMe application, create new pieces of software to help the maintainability of clinical data, educate fellow students, and oversee marketing. Created and maintained a web-based management piece of software that gives users the ability to add, remove, and access all locations entered into Firebase database. Wrote 42-paged piece of technical documentation that pairs with the source code of SCHealthPlusMe for easy maintainability and understanding. Researched new technology for future students to utilize for future iterations of the application.";
 
   // puts an image into an id.
   var mattExperiencePhotoApp = new Image(5,5);
