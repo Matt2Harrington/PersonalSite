@@ -25,37 +25,6 @@ $(document).ready(function() {
     });
   });
 
-// Add smooth scrolling to all links  KEPT FOR REFERENCE
-//
-//   $("a").on('click', function(event) {
-//
-//   // Scroll to specific values
-//   // scrollTo is the same
-//   window.scroll({
-//     top: 2500,
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-//
-//   // Scroll certain amounts from current position
-//   window.scrollBy({
-//     top: 100, // could be negative value
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-//
-//   event.preventDefault();
-//
-//   // Store hash
-//   var hash = this.hash;
-//
-//   // Scroll to a certain element
-//   document.querySelector(hash).scrollIntoView({
-//     behavior: 'smooth'
-//   });
-//
-// });
-
 // Select all links with hashes in the navbar and the sidebar
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -197,9 +166,9 @@ $('a[href*="#"]')
   $("#hammer").attr("src", mattTechnologiesPhoto.src);
 
 
-  // This way of adding elements to a list is more complicated than just adding
+  /* This way of adding elements to a list is more complicated than just adding
   // them in the HTML, but I wanted to generate the content form the JacaScript
-  // since it is basic text, and can be applied to many other areas in th DOM.
+  // since it is basic text, and can be applied to many other areas in th DOM.*/
 
   // this finds the correct ul for appendoing li children
   let technologyContentCoding = document.getElementById("technologyCoding");
@@ -317,21 +286,12 @@ $('a[href*="#"]')
 
   // Docker
 
-  // let liDocker = document.createElement('li');
-  //
-  // liDocker.setAttribute('data-id', "docker");
-  // liDocker.textContent = "Docker Compose";
-  //
-  // technologyContentCoding.appendChild(liDocker);
+  let liDocker = document.createElement('li');
 
-  // Kafka
+  liDocker.setAttribute('data-id', "docker");
+  liDocker.textContent = "Docker";
 
-  // let liKafka = document.createElement('li');
-  //
-  // liKafka.setAttribute('data-id', "kafka");
-  // liKafka.textContent = "Kafka Connect";
-  //
-  // technologyContentCoding.appendChild(liKafka);
+  technologyContentCoding.appendChild(liDocker);
 
   // Couchbase
 
@@ -420,15 +380,6 @@ $('a[href*="#"]')
   liMATLAB.textContent = "MATLAB";
 
   technologyContentEnvironment.appendChild(liMATLAB);
-
-  // R Studio
-
-  // let liRStudio = document.createElement('li');
-  //
-  // liRStudio.setAttribute('data-id', "rstudio");
-  // liRStudio.textContent = "R Studio";
-  //
-  // technologyContentEnvironment.appendChild(liRStudio);
 
   // VS Code
 
