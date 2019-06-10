@@ -576,9 +576,16 @@ $('a[href*="#"]')
   let liAdding = document.createElement('li');
 
   liAdding.setAttribute('data-id', "adding");
-  liAdding.textContent = "Always Adding More...";
+  liAdding.textContent = "Always Learning More...";
 
   technologyContentExposed.appendChild(liAdding);
+
+  // Photography Section
+
+  // puts an image into an id.
+  var camera = new Image(5,5);
+  camera.src = "assets/images/camera.png";
+  $("#camera").attr("src", camera.src);
 
 
 });
