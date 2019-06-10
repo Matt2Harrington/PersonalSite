@@ -371,7 +371,12 @@ h1 {
   /*Photography*/
 
   #camera {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top:0px;
   }
 
   #photography-title {
