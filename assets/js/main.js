@@ -25,37 +25,6 @@ $(document).ready(function() {
     });
   });
 
-// Add smooth scrolling to all links  KEPT FOR REFERENCE
-//
-//   $("a").on('click', function(event) {
-//
-//   // Scroll to specific values
-//   // scrollTo is the same
-//   window.scroll({
-//     top: 2500,
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-//
-//   // Scroll certain amounts from current position
-//   window.scrollBy({
-//     top: 100, // could be negative value
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-//
-//   event.preventDefault();
-//
-//   // Store hash
-//   var hash = this.hash;
-//
-//   // Scroll to a certain element
-//   document.querySelector(hash).scrollIntoView({
-//     behavior: 'smooth'
-//   });
-//
-// });
-
 // Select all links with hashes in the navbar and the sidebar
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -167,14 +136,14 @@ $('a[href*="#"]')
   document.getElementById("experienceParagraphPattons2").innerHTML = "Learned basic troubleshooting techniques, business logic, and organization skills that would help as I grew in my computational understanding through self-learning, projects, and collegiate studies.";
 
   document.getElementById("experienceParagraphACS").innerHTML = "Worked on a team of six interns making a web-based back-end API using Go and front-end heatmap to display events that occur on servers in real time using a time-series database. Full-time internship with mentors from company. Used SCRUM methodology as well as other agile software engineering techniques.";
-  document.getElementById("experienceParagraphACSProject").innerHTML = "Created heatmap API with specialty in front-end web development. Used HTML, CSS, and JavaScript to hook into an API created by team of fellow interns for ACS Technologies. Also helped create backend API. Technologies include Go, Kafka Connect, and Docker Compose environments to integrate. Used GitHub for VCS and worked full-time for eight weeks using agile methodologies in a professional environment.";
+  document.getElementById("experienceParagraphACSProject").innerHTML = "Created heatmap API with specialty in front-end web development. Used Bootstrap 4 and JQuery, along with vanilla HTML, CSS, and JavaScript, to hook into an API created by myself and fellow interns for ACS Technologies. Technologies including Go, Kafka Connect, and Docker Compose environments to were used to create and integrate the backend-API’s to the front-end. Used GitHub for VCS and worked full-time for eight weeks using agile methodologies in a professional environment.";
 
   // puts an image into an id.
   var mattExperiencePhotoACS = new Image(5,5);
   mattExperiencePhotoACS.src = "assets/images/githublogo.png";
   $("#github-acs").attr("src", mattExperiencePhotoACS.src);
 
-  document.getElementById("experienceParagraphFMU").innerHTML = "Tasked with maintaining the SCHealthPlusMe application, create new pieces of software to help the maintainability of clinical data, educate fellow students, and oversee marketing. Created and maintained a web-based management piece of software that gives users the ability to add, remove, and access all locations entered into Firebase database. Wrote technical documentation that pairs with the source code of SCHealthPlusMe for easy maintainability and understanding. Researched new technology for future students to utilize for future iterations of the application.";
+  document.getElementById("experienceParagraphFMU").innerHTML = "Tasked with maintaining the SCHealthPlusMe application, create new pieces of software to help the maintainability of clinical data, educate fellow students, and oversee marketing. Developed a web-based management system with Bootstrap 4, as well as vanilla HTML, CSS, and JavaScript. As well as creating, I also maintained the system, which gives users the ability to add, remove, and access all locations entered into Firebase database. Wrote 42-paged piece of technical documentation that pairs with the source code of SCHealthPlusMe for easy maintainability and understanding. Researched new technology for future students to utilize for future iterations of the application.";
 
   // puts an image into an id.
   var mattExperiencePhotoApp = new Image(5,5);
@@ -197,9 +166,9 @@ $('a[href*="#"]')
   $("#hammer").attr("src", mattTechnologiesPhoto.src);
 
 
-  // This way of adding elements to a list is more complicated than just adding
+  /* This way of adding elements to a list is more complicated than just adding
   // them in the HTML, but I wanted to generate the content form the JacaScript
-  // since it is basic text, and can be applied to many other areas in th DOM.
+  // since it is basic text, and can be applied to many other areas in th DOM.*/
 
   // this finds the correct ul for appendoing li children
   let technologyContentCoding = document.getElementById("technologyCoding");
@@ -317,21 +286,12 @@ $('a[href*="#"]')
 
   // Docker
 
-  // let liDocker = document.createElement('li');
-  //
-  // liDocker.setAttribute('data-id', "docker");
-  // liDocker.textContent = "Docker Compose";
-  //
-  // technologyContentCoding.appendChild(liDocker);
+  let liDocker = document.createElement('li');
 
-  // Kafka
+  liDocker.setAttribute('data-id', "docker");
+  liDocker.textContent = "Docker";
 
-  // let liKafka = document.createElement('li');
-  //
-  // liKafka.setAttribute('data-id', "kafka");
-  // liKafka.textContent = "Kafka Connect";
-  //
-  // technologyContentCoding.appendChild(liKafka);
+  technologyContentCoding.appendChild(liDocker);
 
   // Couchbase
 
@@ -420,15 +380,6 @@ $('a[href*="#"]')
   liMATLAB.textContent = "MATLAB";
 
   technologyContentEnvironment.appendChild(liMATLAB);
-
-  // R Studio
-
-  // let liRStudio = document.createElement('li');
-  //
-  // liRStudio.setAttribute('data-id', "rstudio");
-  // liRStudio.textContent = "R Studio";
-  //
-  // technologyContentEnvironment.appendChild(liRStudio);
 
   // VS Code
 
