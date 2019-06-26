@@ -21,3 +21,55 @@ body {
 hr {
   display: none;
 }
+
+
+section {
+  border-bottom: 1px solid white;
+  height: 100vh;
+  scroll-snap-align: end;
+  position: relative;
+  color: white;
+  overflow-x: hidden;
+  scroll-snap-stop: always;
+}
+
+p {
+  padding:10px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
+.row {
+  margin-right: 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.col {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16pt;
+}
+
+.sectionTitles {
+  text-align: right;
+  top: 10%;
+  right: 20%;
+  padding-right: 20px;
+}
+
+/* STREET */
+
+#street {
+  background-color: #233579;
+  width: 100%;
+}

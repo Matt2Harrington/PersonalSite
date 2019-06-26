@@ -258,7 +258,12 @@ h1 {
 
 #photography-soon {
   text-align: center;
+  color: white;
   font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#photography-soon a {
+  text-decoration: none;
 }
 
 #photography-title {
