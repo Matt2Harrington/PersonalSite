@@ -1,0 +1,23 @@
+html {
+  /* scroll-behavior: smooth; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-y: scroll;
+  display: flex;
+  background-color: #233559!important;
+}
+
+#wrapper {
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+hr {
+  display: none;
+}
