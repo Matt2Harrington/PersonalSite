@@ -69,6 +69,16 @@ $('a[href*="#"]')
   mattAboutPhoto.src = "assets/images/13082174.jpeg";
   $("#mattAboutPhoto").attr("src", mattAboutPhoto.src);
 
+  // puts an image into an id.
+  var mattExperiencePhotoMain = new Image(5,5);
+  mattExperiencePhotoMain.src = "assets/images/githublogo.png";
+  $("#github-main").attr("src", mattExperiencePhotoMain.src);
+
+  // puts an image into an id.
+  var mattLinkedIn = new Image(5,5);
+  mattLinkedIn.src = "assets/images/linkedin.png";
+  $("#linkedin-main").attr("src", mattLinkedIn.src);
+
   // adding paragraph to about section
   document.getElementById("firstParagraphAbout").innerHTML = "Hello, my name is Matt Harrington," + " and I am Computer Science Graduate from Francis Marion University."
   + " I love all types of technology!" + " Over the past fifteen years of my twenty-two year"
