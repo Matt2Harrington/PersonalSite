@@ -67,9 +67,178 @@ h1 {
   padding-right: 20px;
 }
 
-/* STREET */
+/* travel */
 
-#street {
-  background-color: #233579;
+#travel {
   width: 100%;
+}
+
+#mytravelBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#travel-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#travel-link a {
+  text-decoration: none;
+}
+
+#travel-title {
+  z-index: 100;
+}
+
+/* MODELS */
+
+#models {
+  width: 100%;
+}
+
+#myModelsBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#models-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#models-link a {
+  text-decoration: none;
+}
+
+#models-title {
+  z-index: 100;
+}
+
+/* urban */
+
+#urban {
+  width: 100%;
+}
+
+#myurbanBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#urban-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#urban-link a {
+  text-decoration: none;
+}
+
+#urban-title {
+  z-index: 100;
+}
+
+/* NATURE */
+
+#nature {
+  width: 100%;
+}
+
+#myNatureBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#nature-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#nature-link a {
+  text-decoration: none;
+}
+
+#nature-title {
+  z-index: 100;
+}
+
+
+
+/* SPORTS */
+
+#sports {
+  width: 100%;
+}
+
+#mySportsBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#sports-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#sports-link a {
+  text-decoration: none;
+}
+
+#sports-title {
+  z-index: 100;
+}
+
+/* MUSIC */
+
+#music {
+  width: 100%;
+}
+
+#myMusicBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#music-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#music-link a {
+  text-decoration: none;
+}
+
+#music-title {
+  z-index: 100;
 }
