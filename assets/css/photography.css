@@ -73,7 +73,7 @@ h1 {
   width: 100%;
 }
 
-#mytravelBackground {
+#myTravelBackground {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -131,7 +131,7 @@ h1 {
   width: 100%;
 }
 
-#myurbanBackground {
+#myUrbanBackground {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -182,7 +182,6 @@ h1 {
 #nature-title {
   z-index: 100;
 }
-
 
 
 /* SPORTS */
@@ -241,4 +240,24 @@ h1 {
 
 #music-title {
   z-index: 100;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #wrapper {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .sectionTitles {
+    text-align: right;
+    position: static;
+    padding-top: 60px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    z-index: 100;
+  }
+
+
 }
