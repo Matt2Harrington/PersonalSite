@@ -13,6 +13,8 @@ body {
   background-color: black!important;
 }
 
+
+
 #wrapper {
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
@@ -38,9 +40,19 @@ h1 {
   font-size: calc(1rem + 3vw);
 }
 
-.row {
-  margin: 10px 0px 0px 20px;
-  padding: 10px 10px 10px 10px;
+/* .row {
+  margin: 50px 0px 0px 20px;
+  padding: 20px 0px 10px 10px!important;
+
+} */
+
+.innerRow {
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+
 }
 
 .col {
@@ -52,18 +64,59 @@ h1 {
 .sectionTitles {
   text-align: right;
   color: white;
-  top: 10%;
+  top: auto;
   right: 20%;
   padding-right: 20px;
+  margin-top: 25px;
 }
 
 .soloPhoto {
-  margin: 50px;
+  /* margin: 40px 30px 30px 30px; */
+  padding: 40px 30px 30px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media screen and (max-width: 1000px) {
   .soloPhoto {
-    margin: 50px;
+    /* margin: 50px; */
     text-align: center!important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
+
+  .sectionTitles {
+    text-align: right;
+    color: white;
+    right: 20%;
+    padding-right: 0px;
+    padding-top: 60px;
+    margin-top: 0px;
+  }
+/*
+  .row {
+    margin: 10px 0px 0px 20px;
+    padding: 20px 0px 10px 10px!important;
+  } */
+
+  .innerRow {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  body > div.container-fluid {
+    margin-top: 0px;
+  }
+
+  /* .innerRow img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  } */
+
 }
