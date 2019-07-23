@@ -3,21 +3,23 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Site Home of Matt Harrington. Photographer. Web Design. Android Development. Photographer. Bass Player.">
+      <meta name="description" content="Site Home of Matt Harrington: Computer Science Graduate. Web Design. Photographer.">
       <meta name="author" content="Matt Harrington">
 
       <title>Matt2Harrington</title>
-      <link rel="icon" href="assets/images/Logo Draft 1 M2H.png" type="image/">
+      <link rel="icon" href="assets/images/White M2H.png" type="image/">
       <!-- Custom CSS -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/features.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/photography.css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
       <!-- link for bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
       <!-- Link for font -->
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
     </head>
 
@@ -34,19 +36,22 @@
 
         <ul id="listOfLinks">
           <li>
-            <a href="about.html" id="aboutTop">About</a>
+            <a href="#travel" id="educationTop">Travel</a>
           </li>
           <li>
-            <a href="education.html" id="educationTop">Education</a>
+            <a href="#experience" id="experienceTop">Model</a>
           </li>
           <li>
-            <a href="experiance.html" id="experienceTop">Experience</a>
+            <a href="#technologies" id="technologiesTop">Urban</a>
           </li>
           <li>
-            <a href="photography.html" id="photographyTop">Photography</a>
+            <a href="#photography" id="photographyTop">Nature</a>
           </li>
           <li>
-            <a href="contact.html" id="contactTop">Contact</a>
+            <a href="#photography" id="photographyTop">Sports</a>
+          </li>
+          <li>
+            <a href="#music" id="aboutTop">Music</a>
           </li>
         </ul>
       </div>
@@ -63,44 +68,89 @@
     <div class="navbar fixed-top" id="header">
         <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
       <div id="topLabels">
-        <a href="about.html" id="aboutTop">About</a>
-        <a href="education.html" id="educationTop">Education</a>
-        <a href="experiance.html" id="experienceTop">Experience</a>
-        <a href="photography.html" id="photographyTop">Photography</a>
-        <a href="contact.html" id="contactTop">Contact</a>
+        <a href="#travel" id="aboutTop" class="headerLink">Travel</a>
+        <a href="#models" id="educationTop" class="headerLink">Model</a>
+        <a href="#urban" id="experienceTop" class="headerLink">Urban</a>
+        <a href="#nature" id="technologiesTop" class="headerLink">Nature</a>
+        <a href="#sports" id="aboutTop" class="headerLink">Sports</a>
+        <a href="#music" id="aboutTop" class="headerLink">Music</a>
       </div>
     </div>
-    <!-- End of the header -->
+    <!-- End of the header -->    <!-- End of the header -->
 
-<div class="container-fluid" id="wrapper">
+  <div class="container-fluid" id="wrapper">
+    <section id="travel">
+        <h1 class="sectionTitles" id="travel-title">Travel</h1>
+        <img id="travel-icon"></img>
+        <a href="travel.html"><h1 id="travel-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myTravelBackground">
+          <source src="assets/videos/sunset.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="row">
+        </div> -->
+    </section>
 
-  <div class="row">
-    <div class="col">
-      <p>
-        "Fourscore and seven years ago our fathers brought forth, on this continent, a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived, and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting-place for those who here gave their lives, that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate, we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for
-      </p>
-    </div>
-    <div class="col-6">
-      <p>
-        us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died
-      </p>
-    </div>
-    <div class="col">
-      <p>
-        in vain—that this nation, under God, shall have a new birth of freedom, and that government of the people, by the people, for the people, shall not perish from the earth."
-      </p>
-    </div>
-  </div>
-</div> <!-- End of Container-Fluid -->
+    <section id="models">
+      <h1 class="sectionTitles" id="models-title">Model</h1>
+      <img id="model-icon"></img>
+      <a href="photography.html"><h1 id="models-link">Coming Soon</h1></a>
+      <video autoplay muted loop id="myModelsBackground">
+        <source src="assets/videos/walking.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="urban">
+        <h1 class="sectionTitles" id="urban-title">Urban</h1>
+        <img id="urban-icon"></img>
+        <a href="photography.html"><h1 id="urban-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myUrbanBackground">
+          <source src="assets/videos/dc uber.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="nature">
+        <h1 class="sectionTitles" id="nature-title">Nature</h1>
+        <img id="nature-icon"></img>
+        <a href="photography.html"><h1 id="nature-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myNatureBackground">
+          <source src="assets/videos/snow.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="sports">
+        <h1 class="sectionTitles" id="sports-title">Sports</h1>
+        <img id="sports-icon"></img>
+        <a href="photography.html"><h1 id="sports-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="mySportsBackground">
+          <source src="assets/videos/darlington.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="music">
+        <h1 class="sectionTitles" id="music-title">Music</h1>
+        <img id="music-icon"></img>
+        <a href="photography.html"><h1 id="music-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myMusicBackground">
+          <source src="assets/videos/panic.mp4" type="video/mp4">
+        </video>
+    </section>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.slidereveal.min.js"></script>
-    <script src="assets/js/main.js"></script>
+
+  </div> <!-- End of Container-Fluid -->
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
+      <script src="assets/js/jquery.scrollify.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="assets/js/jquery.slidereveal.min.js"></script>
+      <script src="assets/js/features.js"></script>
+      <script src="assets/js/photography.js"></script>
+      <script src="assets/js/jquery.waypoints.min.js"></script>
 
     </body>
   </html>

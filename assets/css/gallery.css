@@ -1,0 +1,122 @@
+html {
+  /* scroll-behavior: smooth; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-y: scroll;
+  display: flex;
+  background-color: black!important;
+}
+
+
+
+#wrapper {
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+hr {
+  display: none;
+}
+
+p {
+  padding:10px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
+/* .row {
+  margin: 50px 0px 0px 20px;
+  padding: 20px 0px 10px 10px!important;
+
+} */
+
+.innerRow {
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.col {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16pt;
+}
+
+.sectionTitles {
+  text-align: right;
+  color: white;
+  top: auto;
+  right: 20%;
+  padding-right: 20px;
+  margin-top: 25px;
+}
+
+.soloPhoto {
+  /* margin: 40px 30px 30px 30px; */
+  padding: 40px 30px 30px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .soloPhoto {
+    /* margin: 50px; */
+    text-align: center!important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .sectionTitles {
+    text-align: right;
+    color: white;
+    right: 20%;
+    padding-right: 0px;
+    padding-top: 60px;
+    margin-top: 0px;
+  }
+/*
+  .row {
+    margin: 10px 0px 0px 20px;
+    padding: 20px 0px 10px 10px!important;
+  } */
+
+  .innerRow {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  body > div.container-fluid {
+    margin-top: 0px;
+  }
+
+  /* .innerRow img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  } */
+
+}
