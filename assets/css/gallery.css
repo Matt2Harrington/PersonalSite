@@ -13,8 +13,6 @@ body {
   background-color: black!important;
 }
 
-
-
 #wrapper {
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
@@ -27,6 +25,22 @@ hr {
 p {
   padding:10px;
 }
+
+/* a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: black;
+  color: grey;
+  text-decoration: none;
+}
+
+.previous {
+  background-color: black;
+  color: white;
+} */
 
 h1 {
   position: absolute;
@@ -67,7 +81,7 @@ h1 {
   top: auto;
   right: 20%;
   padding-right: 20px;
-  margin-top: 25px;
+  margin-top: 47px;
 }
 
 .soloPhoto {
@@ -107,6 +121,10 @@ h1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: center;
+  }
+
+  .previous {
+    display: none;
   }
 
   body > div.container-fluid {
