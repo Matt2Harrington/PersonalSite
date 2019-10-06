@@ -13,6 +13,7 @@
       <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
       <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
       <link rel="stylesheet" type="text/css" href="assets/css/features.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/photography.css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
       <!-- link for bootstrap -->
@@ -35,19 +36,22 @@
 
         <ul id="listOfLinks">
           <li>
-            <a href="#about" id="aboutTop">About</a>
+            <a href="#travel" id="educationTop">Travel</a>
           </li>
           <li>
-            <a href="#education" id="educationTop">Education</a>
+            <a href="#experience" id="experienceTop">Model</a>
           </li>
           <li>
-            <a href="#experience" id="experienceTop">Experience</a>
+            <a href="#technologies" id="technologiesTop">Urban</a>
           </li>
           <li>
-            <a href="#technologies" id="technologiesTop">Technologies</a>
+            <a href="#photography" id="photographyTop">Nature</a>
           </li>
           <li>
-            <a href="#photography" id="photographyTop">Photography</a>
+            <a href="#photography" id="photographyTop">Sports</a>
+          </li>
+          <li>
+            <a href="#music" id="aboutTop">Music</a>
           </li>
         </ul>
       </div>
@@ -64,147 +68,89 @@
     <div class="navbar fixed-top" id="header">
         <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
       <div id="topLabels">
-        <a href="#about" id="aboutTop">About</a>
-        <a href="#education" id="educationTop">Education</a>
-        <a href="#experience" id="experienceTop">Experience</a>
-        <a href="#technologies" id="technologiesTop">Technologies</a>
-        <a href="#photography" id="photographyTop">Photography</a>
+        <a href="#travel" id="aboutTop" class="headerLink">Travel</a>
+        <a href="#models" id="educationTop" class="headerLink">Model</a>
+        <a href="#urban" id="experienceTop" class="headerLink">Urban</a>
+        <a href="#nature" id="technologiesTop" class="headerLink">Nature</a>
+        <a href="#sports" id="aboutTop" class="headerLink">Sports</a>
+        <a href="#music" id="aboutTop" class="headerLink">Music</a>
       </div>
     </div>
-    <!-- End of the header -->
+    <!-- End of the header -->    <!-- End of the header -->
 
-<div class="container-fluid" id="wrapper">
-  <!--Using Bootstrap inside of the sections to orgranize content-->
-        <section id="about">
-            <h1 class="sectionTitles" id="about-title">About</h1>
-            <img src="assets/images/13082174.jpeg" id="mattAboutPhoto"width="175px" height="175px "alt="myPhotoAbout">
-            <div class="row">
-              <div class="col-lg">
-                <h2 class="aboutTitle">My Life</h2>
-                <p class="aboutParagraph" id="firstParagraphAbout"></p>
-                <p class="aboutParagraph"  id="secondParagraphAbout"></p>
-                <p class="aboutParagraph"  id="thirdParagraphAbout"></p>
-              </div>
-              <div class="col-lg">
-                <h2 class="aboutTitle">My Progress</h2>
-                <p class="aboutParagraph" id="firstParagraphMyProgress"></p>
-                <p class="aboutParagraph" id="secondParagraphMyProgress"></p>
-                <p class="aboutParagraph" id="thirdParagraphMyProgress"></p>
-              </div>
-              <div class="col-lg">
-                <h2 class="aboutTitle">My Hobbies</h2>
-                <!-- <h4 class="hobbyTitle">Photography</h4> -->
-                <p class="aboutParagraph"  id="firstParagraphMyHobbies"></p>
-                <!-- <h4 class="hobbyTitle">Music</h4> -->
-                <p class="aboutParagraph"  id="secondParagraphMyHobbies"></p>
-                <!-- <h4 class="hobbyTitle">Health</h4> -->
-                <p class="aboutParagraph"  id="thirdParagraphMyHobbies"></p>
-              </div>
-            </div>
-            <div id="myGitHub">
-              <a href="https://github.com/Matt2Harrington">
-                <img id="github-main"></img>
-              </a>
+  <div class="container-fluid" id="wrapper">
+    <section id="travel">
+        <h1 class="sectionTitles" id="travel-title">Travel</h1>
+        <img id="travel-icon"></img>
+        <a href="travel.html"><h1 id="travel-link">Enter</h1></a>
+        <video autoplay muted loop id="myTravelBackground">
+          <source src="assets/videos/sunset.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="row">
+        </div> -->
+    </section>
 
-              <a href="https://www.linkedin.com/in/matt2harrington/">
-                <img id="linkedin-main"></img>
-              </a>
-            </div>
+    <section id="models">
+      <h1 class="sectionTitles" id="models-title">Model</h1>
+      <img id="model-icon"></img>
+      <a href="models.html"><h1 id="models-link">Enter</h1></a>
+      <video autoplay muted loop id="myModelsBackground">
+        <source src="assets/videos/walking.mp4" type="video/mp4">
+      </video>
+    </section>
 
-        </section>
+    <section id="urban">
+        <h1 class="sectionTitles" id="urban-title">Urban</h1>
+        <img id="urban-icon"></img>
+        <a href="index.html"><h1 id="urban-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myUrbanBackground">
+          <source src="assets/videos/dc uber.mp4" type="video/mp4">
+        </video>
+    </section>
 
-        <section id="education">
-            <h1 class="sectionTitles" id="education-title">Education</h1>
-            <img id="fmuLogo"></img>
-            <div class="row">
-              <!-- <div class="col">
-              </div> -->
-              <div class="col">
-                <p class="educationAccomplishments" id="fmuInfo"></p>
-                <p class="educationAccomplishments" id="computerScienceHonorGraduate"></p>
-                <p class="educationAccomplishments" id="presidentList"></p>
-                <p class="educationAccomplishments" id="scholarship"></p>
-                <p class="educationAccomplishments" id="upsilonPiEpsilon"></p>
-                <p class="educationAccomplishments" id="phiKappaPhi"></p>
-              </div>
-            </div>
-        </section>
-        <section id="experience">
-          <h1 class="sectionTitles" id="experience-title">Experience</h1>
-          <img id="briefcase"></img>
-          <img id="experienceIMG"></img>
-          <div class="row">
-            <div class="col-lg">
-              <h2 class="companyName">Pattons Inc.</h2>
-              <h4 class="positionTitle">IT Specialist</h4>
-              <h5 class="timePosition">May 2012 - April 2019</h5>
-              <p class="aboutParagraph" id="experienceParagraphPattons"></p>
-              <p class="aboutParagraph" id="experienceParagraphPattons2"></p>
-            </div>
-            <hr>
-            <div class="col-lg">
-              <h2 class="companyName">ACS Technologies</h2>
-              <h4 class="positionTitle">Software Engineering Intern</h4>
-              <h5 class="timePosition">Summer 2018</h5>
-              <p class="aboutParagraph" id="experienceParagraphACS"></p>
-              <p class="aboutParagraph" id="experienceParagraphACSProject"></p>
-              <div class="experienceLinksDiv"><img id="github-acs"></img><a class="experienceLinks" href="https://github.com/acstech/doppler-frontend">Project Repository</a></div>
-            </div>
-            <hr>
-            <div class="col-lg">
-              <h2 class="companyName">Francis Marion University</h2>
-              <h4 class="positionTitle">Software Engineer/Research Assistant</h4>
-              <h5 class="timePosition">Summer 2018 - Spring 2019</h5>
-              <p class="aboutParagraph" id="experienceParagraphFMUProject"></p>
-              <div class="experienceLinksDiv"><img id="github-fmu-app"></img><a class="experienceLinks" id="appFMULink"href="https://github.com/FMU-SCRAHealth/UI">Project Repository</a></div>
-              <hr>
-              <p class="aboutParagraph" id="experienceParagraphFMU"></p>
-              <div class="experienceLinksDiv"><img id="github-fmu-site"></img><a class="experienceLinks" href="https://github.com/FMU-SCRA/SCHealthPlusMeClinicManager">Project Repository</a></div>
-            </div>
-          </div>
-        </section>
-        <section id="technologies">
-          <h1 class="sectionTitles" id="technologies-title">Technologies</h1>
-          <img id="hammer"></img>
-          <div class="row">
-            <div class="col-lg">
-              <h2 class="technologyTitle">Programming Skills</h2>
-              <ul class="technologyList" id="technologyCoding"></ul>
-              <hr>
-            </div>
-            <div class="col-lg">
-              <h2 class="technologyTitle">Technology Environments</h2>
-              <ul class="technologyList" id="technologyEnvironments"></ul>
-              <hr>
-            </div>
-            <div class="col-lg">
-              <h2 class="technologyTitle">Exposure</h2>
-              <ul class="technologyList" id="technologyExposed"></ul>
-            </div>
-          </div>
-        </section>
-        <section id="photography">
-          <h1 class="sectionTitles" id="photography-title">Photography</h1>
-          <img id="camera"></img>
-          <a href="photography.html"><h1 id="photography-soon">Enter</h1></a>
-          <video autoplay muted loop id="myVideo">
-            <source src="assets/videos/background.mp4" type="video/mp4">
-          </video>
-        </section
-</div> <!-- End of Container-Fluid -->
+    <section id="nature">
+        <h1 class="sectionTitles" id="nature-title">Nature</h1>
+        <img id="nature-icon"></img>
+        <a href="index.html"><h1 id="nature-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myNatureBackground">
+          <source src="assets/videos/snow.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="sports">
+        <h1 class="sectionTitles" id="sports-title">Sports</h1>
+        <img id="sports-icon"></img>
+        <a href="sports.html"><h1 id="sports-link">Enter</h1></a>
+        <video autoplay muted loop id="mySportsBackground">
+          <source src="assets/videos/darlington.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="music">
+        <h1 class="sectionTitles" id="music-title">Music</h1>
+        <img id="music-icon"></img>
+        <a href="photography.html"><h1 id="music-link">Coming Soon</h1></a>
+        <video autoplay muted loop id="myMusicBackground">
+          <source src="assets/videos/panic.mp4" type="video/mp4">
+        </video>
+    </section>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
-    <script src="assets/js/jquery.scrollify.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="assets/js/jquery.slidereveal.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/features.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+
+  </div> <!-- End of Container-Fluid -->
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
+      <script src="assets/js/jquery.scrollify.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="assets/js/jquery.slidereveal.min.js"></script>
+      <script src="assets/js/features.js"></script>
+      <script src="assets/js/photography.js"></script>
+      <script src="assets/js/jquery.waypoints.min.js"></script>
 
     </body>
   </html>
