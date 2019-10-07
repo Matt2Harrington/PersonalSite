@@ -1,6 +1,17 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
+      <!-- <link href="assets/css/lightbox.css" rel="stylesheet"> -->
+      <!-- <link rel="stylesheet" type="text/css" href="shadowbox.css"/>
+      <script type="text/javascript" src="shadowbox.js"></script>
+      <script type="text/javascript">
+        Shadowbox.init({
+          headleOversize: "drag",
+          modal: true
+        });
+      </script> -->
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Site Home of Matt Harrington: Computer Science Graduate. Web Design. Photographer.">
@@ -14,6 +25,8 @@
       <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
       <link rel="stylesheet" type="text/css" href="assets/css/features.css" />
       <link rel="stylesheet" type="text/css" href="assets/css/photography.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/gallery.css" />
+
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
       <!-- link for bootstrap -->
@@ -24,28 +37,149 @@
     </head>
 
     <body>
+<!-- height="170px" width="256px" -->
+<div id="sidebar-wrapper">
 
-      <div class="navbar fixed-top" id="mobileTrigger">
+  <span id="toggleSidebar" class="menu-toggle">
+    <i class="fas fa-bars fa-2x"></i>
+    <span id="normalHamburgerSidebar"></span>
+  </span>
 
+  <div class="links-sidebar">
+    <a href="index.html" id="matt2LogoHomeSiderbar"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
 
+    <ul id="listOfLinks">
+      <li>
+        <a href="travel.html" id="educationTop">Travel</a>
+      </li>
+      <li>
+        <a href="models.html" id="experienceTop">Model</a>
+      </li>
+      <li>
+        <a href="#technologies" id="technologiesTop">Urban</a>
+      </li>
+      <li>
+        <a href="#photography" id="photographyTop">Nature</a>
+      </li>
+      <li>
+        <a href="sports.html" id="photographyTop">Sports</a>
+      </li>
+      <li>
+        <a href="#music" id="aboutTop">Music</a>
+      </li>
+    </ul>
+  </div>
 
+</div> <!-- End of sidebar-wrapper -->
 
+<div class="navbar fixed-top" id="mobileTrigger">
+  <span id="toggle" class="menu-toggle">
+    <i class="fas fa-bars fa-2x"></i>
+    <span id="normalHamburger"></span>
+  </span>
+</div>
 
+<div class="navbar fixed-top" id="header">
+    <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
+  <div id="topLabels">
+    <a href="travel.html" id="aboutTop" class="headerLink">Travel</a>
+    <a href="models.html" id="educationTop" class="headerLink">Model</a>
+    <a href="urban.html" id="experienceTop" class="headerLink">Urban</a>
+    <a href="#nature" id="technologiesTop" class="headerLink">Nature</a>
+    <a href="sports.html" id="aboutTop" class="headerLink">Sports</a>
+    <a href="#music" id="aboutTop" class="headerLink">Music</a>
+  </div>
+</div>
+<!-- End of the header -->    <!-- End of the header -->
 
-    </div> <!-- End of Container-Fluid -->
+      <div class="container-fluid" id="wrapperTravel">
+
+        <h1 class="sectionTitles" id="education-title">Urban</h1>
+        <!-- <a href="photography.html" class="previous">&#8249; Back</a> -->
+        <div class="row">
+          <div class="innerRow">
+          <!-- <div class="col"> -->
+          <!-- <div class="images"> -->
+          <!-- <div class="col"> -->
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/0beb9d1ac54e0a72ec970a444989f2a0/tumblr_pyxom8SFlP1wvjmhwo7_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/0beb9d1ac54e0a72ec970a444989f2a0/tumblr_pyxom8SFlP1wvjmhwo7_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/efef7862f367ea1cd8fa765053fcd998/tumblr_pyxom8SFlP1wvjmhwo6_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/efef7862f367ea1cd8fa765053fcd998/tumblr_pyxom8SFlP1wvjmhwo6_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/0d1f7dcc25edfcf4e9cdce44ab9a3f9d/tumblr_pyxom8SFlP1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/0d1f7dcc25edfcf4e9cdce44ab9a3f9d/tumblr_pyxom8SFlP1wvjmhwo2_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/0e214f6e98f57e208d7793068f21e998/tumblr_pyxom8SFlP1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/0e214f6e98f57e208d7793068f21e998/tumblr_pyxom8SFlP1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/c0fc7a61f4d1e5bf79f985da179baa65/tumblr_pyxom8SFlP1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/c0fc7a61f4d1e5bf79f985da179baa65/tumblr_pyxom8SFlP1wvjmhwo5_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/bc1a9a9452970e956aad03de6cd1ce6a/tumblr_pyxom8SFlP1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/bc1a9a9452970e956aad03de6cd1ce6a/tumblr_pyxom8SFlP1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/694406010ab24e3c7cf506b1b4ce32e7/tumblr_p1r9fiHpsY1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/694406010ab24e3c7cf506b1b4ce32e7/tumblr_p1r9fiHpsY1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/491cd176118f53b56e73296b13ebb133/tumblr_otmmzjEjtb1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/491cd176118f53b56e73296b13ebb133/tumblr_otmmzjEjtb1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/4f0fe3018f3e40bfbc7c864f7a0aad03/tumblr_pyxom8SFlP1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/4f0fe3018f3e40bfbc7c864f7a0aad03/tumblr_pyxom8SFlP1wvjmhwo4_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/76241bf034ab1a5b6ceea117b15a2a91/tumblr_pyzgwey3jt1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/76241bf034ab1a5b6ceea117b15a2a91/tumblr_pyzgwey3jt1wvjmhwo4_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/3607f7c31de75f2435ff773831ba416f/tumblr_pyxom8SFlP1wvjmhwo8_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/3607f7c31de75f2435ff773831ba416f/tumblr_pyxom8SFlP1wvjmhwo8_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/6da61529c8736ebb558d6172b58908d8/tumblr_pyxom8SFlP1wvjmhwo9_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/6da61529c8736ebb558d6172b58908d8/tumblr_pyxom8SFlP1wvjmhwo9_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/791223390d46f92678367dc26c2699cc/tumblr_p0w215SKqM1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/791223390d46f92678367dc26c2699cc/tumblr_p0w215SKqM1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/209481be7c277840ddac5a9aab3cd4bc/tumblr_pwvlneCOdu1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/209481be7c277840ddac5a9aab3cd4bc/tumblr_pwvlneCOdu1wvjmhwo2_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/5b4cc5e1f31363b998cbe370f6db930e/tumblr_pyzfbwQIGt1wvjmhwo6_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/5b4cc5e1f31363b998cbe370f6db930e/tumblr_pyzfbwQIGt1wvjmhwo6_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/a51de699146baabcaf24d4550d975c8b/tumblr_pyzfsdLZEJ1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/a51de699146baabcaf24d4550d975c8b/tumblr_pyzfsdLZEJ1wvjmhwo5_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/9bb431b08b461933ad0c09c947404460/tumblr_pyzfbwQIGt1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/9bb431b08b461933ad0c09c947404460/tumblr_pyzfbwQIGt1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/cdb721a0cd238017d9e9cc6de84a0059/tumblr_pyzfsdLZEJ1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/cdb721a0cd238017d9e9cc6de84a0059/tumblr_pyzfsdLZEJ1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/3c9ecffc0a5289e6489f58f57ee9ea1f/tumblr_pyzgwey3jt1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/3c9ecffc0a5289e6489f58f57ee9ea1f/tumblr_pyzgwey3jt1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/41a1471493180fdefd6e1ac995c868ef/tumblr_pyzgwey3jt1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/41a1471493180fdefd6e1ac995c868ef/tumblr_pyzgwey3jt1wvjmhwo2_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/feaf090551764c2a23e0d1781593b795/tumblr_pyzgwey3jt1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/feaf090551764c2a23e0d1781593b795/tumblr_pyzgwey3jt1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/1718173818b62424443a6014a69e75a7/tumblr_pyzgwey3jt1wvjmhwo6_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/1718173818b62424443a6014a69e75a7/tumblr_pyzgwey3jt1wvjmhwo6_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/5e8d7579c707098cb53245ff6af26070/tumblr_pyzgwey3jt1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/5e8d7579c707098cb53245ff6af26070/tumblr_pyzgwey3jt1wvjmhwo5_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/eb297687d64abed3abe0db6fb2a76f89/tumblr_pyzgddiE0S1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/eb297687d64abed3abe0db6fb2a76f89/tumblr_pyzgddiE0S1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/d54c2e1bc4678e8fdec3d3000d7e1cea/tumblr_pyzgddiE0S1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/d54c2e1bc4678e8fdec3d3000d7e1cea/tumblr_pyzgddiE0S1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/04cee359fb2598ef1734382706dc16f4/tumblr_pyzgddiE0S1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/04cee359fb2598ef1734382706dc16f4/tumblr_pyzgddiE0S1wvjmhwo2_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/4b192fe683e87e9b6f5b6021a59c9713/tumblr_pyxom8SFlP1wvjmhwo10_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/4b192fe683e87e9b6f5b6021a59c9713/tumblr_pyxom8SFlP1wvjmhwo10_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/4d6e37a74df177e9c3b851fbb6ccb689/tumblr_pyxockycFK1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/4d6e37a74df177e9c3b851fbb6ccb689/tumblr_pyxockycFK1wvjmhwo4_1280.jpg" height="214px" width="142px"></a>
+
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/72d9bd6a8ba3318fcbad90399f933a61/tumblr_pyzhf3jupD1wvjmhwo1_540.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/72d9bd6a8ba3318fcbad90399f933a61/tumblr_pyzhf3jupD1wvjmhwo1_540.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/72d9bd6a8ba3318fcbad90399f933a61/tumblr_pyzhf3jupD1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/72d9bd6a8ba3318fcbad90399f933a61/tumblr_pyzhf3jupD1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/0879a9fd346557d8f4cc29396a35da4a/tumblr_pyzhf3jupD1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/0879a9fd346557d8f4cc29396a35da4a/tumblr_pyzhf3jupD1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/e88286cffa311dbea212d1f09986bdfe/tumblr_pyxockycFK1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/e88286cffa311dbea212d1f09986bdfe/tumblr_pyxockycFK1wvjmhwo5_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/67081d166f2e84f636a736738d399bb3/tumblr_pyxockycFK1wvjmhwo6_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/67081d166f2e84f636a736738d399bb3/tumblr_pyxockycFK1wvjmhwo6_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/0d8f51376aa3f72b397b6444890eed4d/tumblr_pyxockycFK1wvjmhwo9_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/0d8f51376aa3f72b397b6444890eed4d/tumblr_pyxockycFK1wvjmhwo9_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/794713e5cbbe7334ca716d84b9be3d16/tumblr_pwvmbzS4f81wvjmhwo6_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/794713e5cbbe7334ca716d84b9be3d16/tumblr_pwvmbzS4f81wvjmhwo6_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/70c6146f747f85be9e47c5dff89a1e88/tumblr_pwvlt6BYJV1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/70c6146f747f85be9e47c5dff89a1e88/tumblr_pwvlt6BYJV1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/52c911b5605eb05f076a1967253242df/tumblr_pwvkzbY0241wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/52c911b5605eb05f076a1967253242df/tumblr_pwvkzbY0241wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/124bf7774953287a2d265c353e0fe299/tumblr_pv8b28N6mW1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/124bf7774953287a2d265c353e0fe299/tumblr_pv8b28N6mW1wvjmhwo5_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/04e43fae8ef4b6d11fdf5e413777f1de/tumblr_p1r9ryED801wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/04e43fae8ef4b6d11fdf5e413777f1de/tumblr_p1r9ryED801wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/95f52fa2694e1573f9fb05521e8d319c/tumblr_pyxvf3BvFJ1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/95f52fa2694e1573f9fb05521e8d319c/tumblr_pyxvf3BvFJ1wvjmhwo2_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/9227d0d60cd26f67216fa9a8cb2929ce/tumblr_pyxsr7PAhF1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/9227d0d60cd26f67216fa9a8cb2929ce/tumblr_pyxsr7PAhF1wvjmhwo2_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/d0b5e9ed47817d3372433804dcce749d/tumblr_pyxsr7PAhF1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/d0b5e9ed47817d3372433804dcce749d/tumblr_pyxsr7PAhF1wvjmhwo4_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/103997128453c58d7a1c755f2bbb24f4/tumblr_pyxtwcUx4w1wvjmhwo1_540.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/103997128453c58d7a1c755f2bbb24f4/tumblr_pyxtwcUx4w1wvjmhwo1_540.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/1a4faf3cfa857fe6a3ad8a9ec3f38276/tumblr_oxgsb8rslr1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/1a4faf3cfa857fe6a3ad8a9ec3f38276/tumblr_oxgsb8rslr1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/3878d193ef2221f71bfd1b803c26d48c/tumblr_oxgsgbFcLT1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/3878d193ef2221f71bfd1b803c26d48c/tumblr_oxgsgbFcLT1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/17f568f041ee36763a6f08272acd80c4/tumblr_p0w26t4IXV1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/17f568f041ee36763a6f08272acd80c4/tumblr_p0w26t4IXV1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/dc87a961e33f3f5be20a7ae14d082a1a/tumblr_p1r99unOhe1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/dc87a961e33f3f5be20a7ae14d082a1a/tumblr_p1r99unOhe1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/33e19e9c3072dd82eb4fbf18a94c864e/tumblr_p0w2nz9HuI1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/33e19e9c3072dd82eb4fbf18a94c864e/tumblr_p0w2nz9HuI1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/22f043434a9eca04d145be1758225c31/tumblr_p0wv09EJ5b1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/22f043434a9eca04d145be1758225c31/tumblr_p0wv09EJ5b1wvjmhwo1_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/f233ff46152dcd64e2381c261c5d9092/tumblr_oxgrxcegcP1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/f233ff46152dcd64e2381c261c5d9092/tumblr_oxgrxcegcP1wvjmhwo1_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/c3a972ae37f32fecfee47599d236a282/tumblr_pyxsr7PAhF1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/c3a972ae37f32fecfee47599d236a282/tumblr_pyxsr7PAhF1wvjmhwo3_1280.jpg" height="214px" width="142px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/a51d08174c17ee917454657b653fc08b/tumblr_pyzfbwQIGt1wvjmhwo2_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/a51d08174c17ee917454657b653fc08b/tumblr_pyzfbwQIGt1wvjmhwo2_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/803e99d8ae8e49cbe43162f1a7f39bf5/tumblr_pyzfbwQIGt1wvjmhwo3_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/803e99d8ae8e49cbe43162f1a7f39bf5/tumblr_pyzfbwQIGt1wvjmhwo3_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/8727ad8ec67f30a861dd4ce8f1fa6dfe/tumblr_pyzfbwQIGt1wvjmhwo5_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/8727ad8ec67f30a861dd4ce8f1fa6dfe/tumblr_pyzfbwQIGt1wvjmhwo5_1280.jpg" height="170px" width="256px"></a>
+          <a data-fancybox="gallery" href="https://66.media.tumblr.com/ca7446c82f8bea2203a3f04adce575f0/tumblr_pyzfbwQIGt1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/ca7446c82f8bea2203a3f04adce575f0/tumblr_pyzfbwQIGt1wvjmhwo4_1280.jpg" height="170px" width="256px"></a>
+          </div>
+          <!-- </div> -->
+        </div>
+
+      </div> <!-- End of Container-Fluid -->
 
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
         <script src="assets/js/jquery.scrollify.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="assets/js/jquery.slidereveal.min.js"></script>
-        <script src="assets/js/features.js"></script>
         <script src="assets/js/photography.js"></script>
+        <script src="assets/js/features.js"></script>
         <script src="assets/js/jquery.waypoints.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 
       </body>
     </html>
