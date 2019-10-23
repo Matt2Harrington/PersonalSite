@@ -138,5 +138,4 @@ $('a[href*="#"]')
 //   // this opens the Remove Clinic Modal
 //   document.getElementById("addImage").addEventListener('click', openRemoveModal);
 
-
 }); // ready window.$("#modal_id").modal("show")
