@@ -11,6 +11,13 @@ body {
   overflow-y: scroll;
   display: flex;
   background-color: #233559!important;
+  position: relative;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
 }
 
 #wrapper {
@@ -242,6 +249,26 @@ h1 {
   z-index: 100;
 }
 
+/*FOOTER*/
+#mattfooter {
+  padding: 10px;
+}
+
+#mattfooter a {
+  padding: 5px;
+}
+
+#addImage {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  text-align:center;
+}
+
 @media screen and (max-width: 1000px) {
 
   #wrapper {
@@ -259,5 +286,16 @@ h1 {
     z-index: 100;
   }
 
+  /*FOOTER*/
+  #mattfooter {
+    padding: 10px;
+  }
 
+  #mattfooter a {
+    padding: 5px;
+  }
+
+  #px500 {
+    padding-right: 0px;
+  }
 }
