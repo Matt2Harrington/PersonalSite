@@ -1,6 +1,17 @@
 <!DOCTYPE html>
   <html lang="en">
     <head>
+      <!-- <link href="assets/css/lightbox.css" rel="stylesheet"> -->
+      <!-- <link rel="stylesheet" type="text/css" href="shadowbox.css"/>
+      <script type="text/javascript" src="shadowbox.js"></script>
+      <script type="text/javascript">
+        Shadowbox.init({
+          headleOversize: "drag",
+          modal: true
+        });
+      </script> -->
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Site Home of Matt Harrington: Computer Science Graduate. Web Design. Photographer.">
@@ -14,6 +25,8 @@
       <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css" />
       <link rel="stylesheet" type="text/css" href="assets/css/features.css" />
       <link rel="stylesheet" type="text/css" href="assets/css/photography.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/gallery.css" />
+
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
       <!-- link for bootstrap -->
@@ -24,27 +37,105 @@
     </head>
 
     <body>
+<!-- height="170px" width="256px" -->
+<div id="sidebar-wrapper">
 
-      <div class="navbar fixed-top" id="mobileTrigger">
+  <span id="toggleSidebar" class="menu-toggle">
+    <i class="fas fa-bars fa-2x"></i>
+    <span id="normalHamburgerSidebar"></span>
+  </span>
 
+  <div class="links-sidebar">
+    <a href="index.html" id="matt2LogoHomeSiderbar"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
 
+    <ul id="listOfLinks">
+      <li>
+        <a href="travel.html" id="educationTop">Travel</a>
+      </li>
+      <li>
+        <a href="models.html" id="experienceTop">Models</a>
+      </li>
+      <li>
+        <a href="urban.html" id="technologiesTop">Urban</a>
+      </li>
+      <li>
+        <a href="nature.html" id="photographyTop">Nature</a>
+      </li>
+      <li>
+        <a href="sports.html" id="photographyTop">Sports</a>
+      </li>
+      <li>
+        <a href="music.html" id="aboutTop">Music</a>
+      </li>
+    </ul>
+  </div>
 
+</div> <!-- End of sidebar-wrapper -->
 
+<div class="navbar fixed-top" id="mobileTrigger">
+  <span id="toggle" class="menu-toggle">
+    <i class="fas fa-bars fa-2x"></i>
+    <span id="normalHamburger"></span>
+  </span>
+</div>
 
-    </div> <!-- End of Container-Fluid -->
+<div class="navbar fixed-top" id="header">
+    <a href="index.html" id="matt2LogoHome"><img src="assets/images/White M2H.png" alt="mattLogo" height="30" width="60"/></a>
+  <div id="topLabels">
+    <a href="travel.html" id="aboutTop" class="headerLink">Travel</a>
+    <a href="models.html" id="educationTop" class="headerLink">Model</a>
+    <a href="urban.html" id="experienceTop" class="headerLink">Urban</a>
+    <a href="nature.html" id="technologiesTop" class="headerLink">Nature</a>
+    <a href="sports.html" id="aboutTop" class="headerLink">Sports</a>
+    <a href="music.html" id="aboutTop" class="headerLink">Music</a>
+  </div>
+</div>
+<!-- End of the header -->    <!-- End of the header -->
 
+      <div class="container-fluid" id="wrapperTravel">
+        <h1 class="sectionTitles" id="education-title">Nature</h1>
+        <div class="row">
+          <div class="innerRow">
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/83447753355607e92770e6fdfb6320aa/dc98674c6dcb175c-41/s1280x1920/516be4f27593cd58fd0cc4ddb25b0b46bb151da5.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/83447753355607e92770e6fdfb6320aa/dc98674c6dcb175c-41/s1280x1920/516be4f27593cd58fd0cc4ddb25b0b46bb151da5.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/94d6e683a5c2846447963149fc0b59b6/887551ea752080b5-f5/s1280x1920/a6e23806c980af0735607cd11247b194c60ec6fd.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/94d6e683a5c2846447963149fc0b59b6/887551ea752080b5-f5/s1280x1920/a6e23806c980af0735607cd11247b194c60ec6fd.jpg" height="214px" width="142px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/7bf86b816c4b9edf0af614322f767a36/887551ea752080b5-4c/s1280x1920/0128b9ba8dcd0282adb634f587bf328ce3a062a5.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/7bf86b816c4b9edf0af614322f767a36/887551ea752080b5-4c/s1280x1920/0128b9ba8dcd0282adb634f587bf328ce3a062a5.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/1ccf2f9c92a5f19b2b37062e02a10ea7/dc98674c6dcb175c-89/s1280x1920/f5ec7ccf628706f9c6b9f63d69faeb12e73e100d.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/1ccf2f9c92a5f19b2b37062e02a10ea7/dc98674c6dcb175c-89/s1280x1920/f5ec7ccf628706f9c6b9f63d69faeb12e73e100d.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/b815c073e8d16dc4a9c22707e1d169f0/dc98674c6dcb175c-2c/s1280x1920/8b60f9d0af78ffb0ce569070c6752389fa80b220.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/b815c073e8d16dc4a9c22707e1d169f0/dc98674c6dcb175c-2c/s1280x1920/8b60f9d0af78ffb0ce569070c6752389fa80b220.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/bf9a96bfb38d9b30f3081daab053e1fa/dc98674c6dcb175c-9f/s1280x1920/66b0cfb112ed9c19b28abda5a033a3d2c9d14b92.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/bf9a96bfb38d9b30f3081daab053e1fa/dc98674c6dcb175c-9f/s1280x1920/66b0cfb112ed9c19b28abda5a033a3d2c9d14b92.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/7cf3299893e5c04e10872351804da3eb/dc98674c6dcb175c-c9/s1280x1920/44b448ba2d027e14703dae59a1e8b4a7d2606fc4.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/7cf3299893e5c04e10872351804da3eb/dc98674c6dcb175c-c9/s1280x1920/44b448ba2d027e14703dae59a1e8b4a7d2606fc4.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/c20d1b416f0f079f032ef1c770d822d1/dc98674c6dcb175c-c7/s1280x1920/fe90ee55dd2a5ff2063d0b045b05bf5f0220c1b2.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/c20d1b416f0f079f032ef1c770d822d1/dc98674c6dcb175c-c7/s1280x1920/fe90ee55dd2a5ff2063d0b045b05bf5f0220c1b2.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/b7670f7b27ea8765e91dafbca6c7bb7d/dc98674c6dcb175c-88/s1280x1920/7f7163a6ae58d295fa2723d8d07281e6987cfbc9.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/b7670f7b27ea8765e91dafbca6c7bb7d/dc98674c6dcb175c-88/s1280x1920/7f7163a6ae58d295fa2723d8d07281e6987cfbc9.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/408e20fe5d6ab6329911ee0af3212c0a/887551ea752080b5-07/s1280x1920/a57ecfbd61d695737ace4f0d255c41a8a4613651.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/408e20fe5d6ab6329911ee0af3212c0a/887551ea752080b5-07/s1280x1920/a57ecfbd61d695737ace4f0d255c41a8a4613651.jpg" height="170px" width="256px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/11e87fd1a536480b04c169616aa89a69/887551ea752080b5-a1/s1280x1920/d24ff6fd8d6cdfd4ae6220cf35d06dc704dd1bd8.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/11e87fd1a536480b04c169616aa89a69/887551ea752080b5-a1/s1280x1920/d24ff6fd8d6cdfd4ae6220cf35d06dc704dd1bd8.jpg" height="170px" width="256px"></a>
+          
+            <!-- <a data-fancybox="gallery" href="https://66.media.tumblr.com/4c5d7f424221ab98b3f5cf31768e18a9/tumblr_pzaomkpXHS1wvjmhwo4_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/4c5d7f424221ab98b3f5cf31768e18a9/tumblr_pzaomkpXHS1wvjmhwo4_1280.jpg" height="214px" width="142px"></a>
+            <a data-fancybox="gallery" href="https://66.media.tumblr.com/d0e10efef99d6987093285bd54f2dcc2/tumblr_pzaqfn50HL1wvjmhwo1_1280.jpg" class="soloPhoto"><img src="https://66.media.tumblr.com/d0e10efef99d6987093285bd54f2dcc2/tumblr_pzaqfn50HL1wvjmhwo1_1280.jpg" height="214px" width="142px"></a> -->
+          </div>
+        </div>
+        <footer>
+          <div id="mattfooter">
+            <a href="https://www.instagram.com/matt2harrington/" id="insta" class="headerLink"><img src="assets/images/insta.png" width="40" height="40" title="Instagram Icon" alt="instagram"></a>
+            <a href="https://www.facebook.com/matt2harrington/" id="facebook" class="headerLink"><img src="assets/images/facebook.png" width="40" height="40" title="Facebook Icon" alt="facebook"></a>
+            <a href="https://500px.com/mattharrington" id="px500" class="headerLink"><img src="assets/images/500px.png" width="38" height="40" title="500px Icon" alt="500px"></a>
+          </div>
+          <!-- <div>
+            <button id="addImage">Add Image</button>
+          </div> -->
+        </footer>
+      </div> <!-- End of Container-Fluid -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
-    <script src="assets/js/jquery.scrollify.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="assets/js/jquery.slidereveal.min.js"></script>
-    <script src="assets/js/features.js"></script>
-    <script src="assets/js/photography.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-
-  </body>
-</html>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script> -->
+        <script src="assets/js/jquery.scrollify.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="assets/js/jquery.slidereveal.min.js"></script>
+        <script src="assets/js/photography.js"></script>
+        <script src="assets/js/features.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      </body>
+    </html>

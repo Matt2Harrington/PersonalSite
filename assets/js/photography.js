@@ -139,4 +139,4 @@ $('a[href*="#"]')
 //   document.getElementById("addImage").addEventListener('click', openRemoveModal);
 
 
-}); // ready
+}); // ready window.$("#modal_id").modal("show")
