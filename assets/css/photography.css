@@ -161,6 +161,35 @@ h1 {
   z-index: 100;
 }
 
+/* urban */
+
+#wedding {
+  width: 100%;
+}
+
+#myWeddingBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#wedding-link {
+  text-align: center;
+  color: white;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#wedding-link a {
+  text-decoration: none;
+}
+
+#wedding-title {
+  z-index: 100;
+}
+
 /* NATURE */
 
 #nature {
