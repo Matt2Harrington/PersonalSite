@@ -11,6 +11,7 @@
   
 #ce-image {
     text-align: center;
+    display: none;
 }
 
 #ce-image-size {
