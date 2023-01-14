@@ -14,8 +14,8 @@
 }
 
 #ce-image-size {
-    height: 150px !important;
-    width: 150px !important;
+    height: 100px !important;
+    width: 100px !important;
 }
 
 #ce-video {
@@ -30,6 +30,7 @@
   
 .cePage {
     padding: 15px;
+    padding-top: 0px;
     color: white;
     display: block;
 }
@@ -137,7 +138,7 @@
 
     .ceVideo {
         width: 520px;
-        height: 840px;
+        height: 740px;
         text-align: right;
     }
       
