@@ -27,11 +27,6 @@ body > div.container-fluid {
   padding: 0px 0px 0px 0px;
 }
 
-#privacy-policy {
-  padding: 15px;
-  color: white;
-}
-
 
 @media screen and (max-width: 1000px) {
 
