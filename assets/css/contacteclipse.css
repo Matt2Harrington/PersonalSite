@@ -1,0 +1,150 @@
+#privacy-policy {
+    padding: 15px;
+    color: white;
+}
+  
+#ce-text {
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+  
+#ce-image {
+    text-align: center;
+}
+
+#ce-image-size {
+    height: 150px !important;
+    width: 150px !important;
+}
+
+#ce-video {
+    text-align: center;
+    display: block;
+}
+
+.ceVideo {
+    width: 100px;
+    height: 340px;
+}
+  
+.cePage {
+    padding: 15px;
+    color: white;
+    display: block;
+}
+
+@media screen and (max-width: 320px) {
+    #privacy-policy {
+        padding: 15px;
+        color: white;
+    }
+      
+    #ce-text {
+        padding: 50px;
+        color: white;
+        width: 50%;
+        font-size: larger;
+    }
+      
+    #ce-image {
+        width: 50%;
+        text-align: left;
+        padding-right: 50px;
+        display: inline;
+    }
+
+    #ce-image-size {
+        height: 559px;
+        width: 258px;
+    }
+      
+    .cePage {
+        padding: 15px;
+        color: white;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #privacy-policy {
+        padding: 15px;
+        color: white;
+    }
+      
+    #ce-text {
+        padding: 50px;
+        color: white;
+        font-size: large;
+    }
+      
+    #ce-image {
+        width: 50%;
+        text-align: center;
+        padding-left: 0px;
+        display: inline;
+    }
+
+    #ce-image-size {
+        height: 559px;
+        width: 258px;
+    }
+
+    #ce-video {
+        text-align: center;
+    }
+
+    .ceVideo {
+        width: 200px;
+        height: 540px;
+    }
+      
+    .cePage {
+        padding: 15px;
+        color: white;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #privacy-policy {
+        padding: 15px;
+        color: white;
+    }
+      
+    #ce-text {
+        padding: 50px;
+        color: white;
+        width: 50%;
+        font-size: larger;
+    }
+      
+    #ce-image {
+        text-align: center;
+        padding-left: 0px;
+        display: inline;
+    }
+
+    #ce-image-size {
+        height: 500px !important;
+        width: 500px !important;
+    }
+
+    #ce-video {
+        text-align: right;
+        width: 1100px;
+    }
+
+    .ceVideo {
+        width: 520px;
+        height: 840px;
+        text-align: right;
+    }
+      
+    .cePage {
+        padding: 15px;
+        padding-top: 100px;
+        color: white;
+        display: flex;
+    }
+}
