@@ -56,6 +56,18 @@ h1 {
   font-size: calc(1rem + 3vw);
 }
 
+h2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
 .row {
   margin-right: 0px;
   padding: 10px 0px 0px 0px;
@@ -93,6 +105,7 @@ h1 {
   text-align: center;
   color: white;
   font-family: 'Waiting for the Sunrise', cursive;
+  text-decoration: none;
 }
 
 #travel-link a {
