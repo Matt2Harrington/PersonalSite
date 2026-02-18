@@ -1,8 +1,0 @@
-@media screen and (max-width: 1000px){
-  #submit {
-    display: list-item;
-      text-align: center;
-      /* margin-left: inherit; */
-      margin: auto;
-  }
-}

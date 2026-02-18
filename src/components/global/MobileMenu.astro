@@ -1,0 +1,109 @@
+---
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Work', href: '/work' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+---
+
+<!-- Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden" aria-hidden="true"></div>
+
+<!-- Slide-in panel -->
+<aside
+  id="mobile-menu"
+  class="fixed top-0 left-0 h-full w-72 bg-gray-950 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-xl"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile navigation"
+>
+  <div class="flex items-center justify-between p-4 border-b border-gray-800">
+    <a href="/" aria-label="Home">
+      <img src="/images/profile/m2h-logo.png" alt="M2H Logo" width="48" height="24" />
+    </a>
+    <button
+      id="mobile-menu-close"
+      class="p-2 text-gray-300 hover:text-brand-blue"
+      aria-label="Close menu"
+    >
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <nav class="p-4" aria-label="Mobile navigation">
+    <ul class="space-y-1">
+      {navLinks.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class="block px-4 py-3 text-lg font-medium text-gray-300 hover:bg-gray-800 hover:text-brand-blue rounded-lg transition-colors"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</aside>
+
+<script>
+  function initMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const closeBtn = document.getElementById('mobile-menu-close');
+
+    if (!btn || !menu || !overlay || !closeBtn) return;
+
+    function openMenu() {
+      menu!.classList.remove('-translate-x-full');
+      overlay!.classList.remove('hidden');
+      btn!.setAttribute('aria-expanded', 'true');
+      closeBtn!.focus();
+    }
+
+    function closeMenu() {
+      menu!.classList.add('-translate-x-full');
+      overlay!.classList.add('hidden');
+      btn!.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (menu!.classList.contains('-translate-x-full')) return;
+      if (e.key === 'Escape') {
+        closeMenu();
+        btn!.focus();
+        return;
+      }
+      // Focus trap
+      if (e.key === 'Tab') {
+        const focusable = menu!.querySelectorAll<HTMLElement>('a, button, [tabindex]:not([tabindex="-1"])');
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    // Close on link click
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+
+  // Run on initial load and after Astro page transitions
+  initMobileMenu();
+  document.addEventListener('astro:after-swap', initMobileMenu);
+</script>

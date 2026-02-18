@@ -1,0 +1,46 @@
+export const programmingSkills = [
+  'Java',
+  'Python',
+  'HTML',
+  'CSS',
+  'JavaScript/JQuery',
+  'Bootstrap 4',
+  'MySQL',
+  'SQLite',
+  'PHP',
+  'NoSQL',
+  'Firebase',
+  'GitHub',
+  'Docker',
+  'Couchbase',
+  'UML',
+];
+
+export const technologyEnvironments = [
+  'Android Studio',
+  'IntelliJ',
+  'PyCharm',
+  'Atom',
+  'Terminal/Command Line',
+  'Slack',
+  'MATLAB',
+  'Visual Studio Code',
+  'Photoshop CC',
+  'Lightroom 5/CC',
+  'Microsoft Office',
+  'Creately',
+  'Agile Methodologies',
+  'SCRUM',
+];
+
+export const technologyExposure = [
+  'React',
+  'Angular',
+  'Vue.js',
+  'node.js',
+  'C',
+  'Objective-C',
+  'Swift',
+  'Xcode',
+  'Always Learning More...',
+];

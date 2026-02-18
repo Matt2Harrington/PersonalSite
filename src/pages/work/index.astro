@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { appProjects, photoProjects } from '../../data/projects';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Read first image from each gallery JSON to use as cover
+function getGalleryCover(slug: string): string {
+  try {
+    const jsonPath = path.join(process.cwd(), 'src', 'content', 'photography', `${slug}.json`);
+    const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+    return data.images?.[0]?.src || '';
+  } catch {
+    return '';
+  }
+}
+
+const allItems = [
+  ...appProjects.map(p => ({
+    title: p.title,
+    slug: p.slug,
+    category: 'app' as const,
+    image: p.coverImage,
+    description: p.description,
+  })),
+  ...photoProjects.map(p => ({
+    title: p.title,
+    slug: p.slug,
+    category: 'photography' as const,
+    image: getGalleryCover(p.slug),
+    description: '',
+  })),
+];
+---
+
+<BaseLayout title="Work - Matt Harrington">
+  <section class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">My Work</h1>
+    <p class="text-center text-gray-400 mb-10 max-w-xl mx-auto">
+      iOS apps and photography portfolios
+    </p>
+
+    <!-- Filter Tabs -->
+    <div role="tablist" class="flex justify-center gap-2 mb-12" aria-label="Filter projects">
+      <button
+        role="tab"
+        data-filter="all"
+        aria-selected="true"
+        tabindex="0"
+        class="filter-tab px-5 py-2 rounded-full text-sm font-medium transition-colors bg-brand-blue text-white"
+      >
+        All
+      </button>
+      <button
+        role="tab"
+        data-filter="app"
+        aria-selected="false"
+        tabindex="-1"
+        class="filter-tab px-5 py-2 rounded-full text-sm font-medium transition-colors bg-gray-800 text-gray-300 hover:bg-gray-700"
+      >
+        Apps
+      </button>
+      <button
+        role="tab"
+        data-filter="photography"
+        aria-selected="false"
+        tabindex="-1"
+        class="filter-tab px-5 py-2 rounded-full text-sm font-medium transition-colors bg-gray-800 text-gray-300 hover:bg-gray-700"
+      >
+        Photography
+      </button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+      {allItems.map(item => (
+        <a
+          href={`/work/${item.slug}`}
+          class="project-card group relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-800"
+          data-category={item.category}
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="300"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <span class="inline-block text-xs font-medium px-2 py-1 rounded-full bg-brand-blue/80 text-white mb-2">
+              {item.category === 'app' ? 'App' : 'Photography'}
+            </span>
+            <h3 class="text-xl font-semibold text-white">{item.title}</h3>
+            {item.description && (
+              <p class="text-sm text-gray-200 mt-1 line-clamp-2">{item.description}</p>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  function initFilters() {
+    const tabs = Array.from(document.querySelectorAll<HTMLElement>('.filter-tab'));
+    const cards = document.querySelectorAll('.project-card');
+
+    function activateTab(tab: HTMLElement) {
+      const filter = tab.dataset.filter;
+
+      tabs.forEach(t => {
+        t.setAttribute('aria-selected', 'false');
+        t.setAttribute('tabindex', '-1');
+        t.classList.remove('bg-brand-blue', 'text-white');
+        t.classList.add('bg-gray-800', 'text-gray-300');
+      });
+      tab.setAttribute('aria-selected', 'true');
+      tab.setAttribute('tabindex', '0');
+      tab.classList.add('bg-brand-blue', 'text-white');
+      tab.classList.remove('bg-gray-800', 'text-gray-300');
+
+      cards.forEach(card => {
+        const cardCategory = (card as HTMLElement).dataset.category;
+        if (filter === 'all' || cardCategory === filter) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+
+      window.history.replaceState(null, '', filter === 'all' ? '/work' : `/work#${filter}`);
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => activateTab(tab));
+      tab.addEventListener('keydown', (e) => {
+        const idx = tabs.indexOf(tab);
+        let newIdx = idx;
+        if (e.key === 'ArrowRight') newIdx = (idx + 1) % tabs.length;
+        else if (e.key === 'ArrowLeft') newIdx = (idx - 1 + tabs.length) % tabs.length;
+        else return;
+        e.preventDefault();
+        activateTab(tabs[newIdx]);
+        tabs[newIdx].focus();
+      });
+    });
+
+    // Check hash on load
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const matchingTab = tabs.find(t => t.dataset.filter === hash);
+      if (matchingTab) activateTab(matchingTab);
+    }
+  }
+
+  initFilters();
+  document.addEventListener('astro:after-swap', initFilters);
+</script>

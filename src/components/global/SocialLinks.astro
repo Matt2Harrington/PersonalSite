@@ -1,0 +1,17 @@
+---
+import { socialLinks } from '../../data/social-links';
+---
+
+<div class="flex items-center gap-4">
+  {socialLinks.map(link => (
+    <a
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="opacity-70 hover:opacity-100 transition-opacity"
+      aria-label={link.name}
+    >
+      <img src={link.icon} alt={link.name} width="24" height="24" class="invert" />
+    </a>
+  ))}
+</div>

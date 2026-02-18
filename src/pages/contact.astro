@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialLinks from '../components/global/SocialLinks.astro';
+---
+
+<BaseLayout title="Contact - Matt Harrington">
+  <section class="py-16 px-4 sm:px-6 max-w-2xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">Get in Touch</h1>
+    <p class="text-center text-gray-400 mb-12">
+      Have a project in mind or want to collaborate? I'd love to hear from you.
+    </p>
+
+    <form
+      action="https://formspree.io/f/matt2harrington@gmail.com"
+      method="POST"
+      class="space-y-6"
+      id="contact-form"
+    >
+      <div>
+        <label for="name" class="block text-sm font-medium mb-1">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent transition"
+          placeholder="Your name"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent transition"
+          placeholder="your@email.com"
+        />
+      </div>
+
+      <div>
+        <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent transition"
+          placeholder="What's this about?"
+        />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium mb-1">
+          Message
+          <span id="char-count" class="text-xs text-gray-500 ml-2">0 / 500</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows="5"
+          maxlength="500"
+          class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent transition resize-none"
+          placeholder="Tell me about your project..."
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full px-6 py-3 bg-brand-blue text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+      >
+        Send Message
+      </button>
+    </form>
+
+    <div class="mt-12 text-center">
+      <p class="text-gray-400 mb-4">Or reach out directly:</p>
+      <a
+        href="mailto:matt2harrington@gmail.com"
+        class="text-brand-blue hover:underline font-medium"
+      >
+        matt2harrington@gmail.com
+      </a>
+
+      <div class="flex justify-center mt-6">
+        <SocialLinks />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  function initContactForm() {
+    const textarea = document.getElementById('message') as HTMLTextAreaElement;
+    const counter = document.getElementById('char-count');
+
+    if (textarea && counter) {
+      textarea.addEventListener('input', () => {
+        counter.textContent = `${textarea.value.length} / 500`;
+      });
+    }
+  }
+
+  initContactForm();
+  document.addEventListener('astro:after-swap', initContactForm);
+</script>
