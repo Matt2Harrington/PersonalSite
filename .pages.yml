@@ -1,0 +1,45 @@
+media:
+  input: public/images/blog
+  output: /images/blog
+
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    filename: "{fields.slug}.md"
+    view:
+      fields: [title, date, description]
+      primary: title
+      sort: date
+      default:
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        description: URL-friendly identifier (e.g. my-first-post)
+      - name: description
+        label: Description
+        type: string
+        required: true
+      - name: date
+        label: Published Date
+        type: date
+        required: true
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: image
+        label: Cover Image
+        type: image
+      - name: body
+        label: Content
+        type: rich-text
