@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const apps = await getCollection('apps');
+  return apps.map(app => ({
+    params: { slug: app.data.slug },
+    props: { app: app.data },
+  }));
+}
+
+const { app } = Astro.props;
+const privacySection = app.sections.find(s => s.title === 'Privacy Policy');
+---
+
+<BaseLayout title={`Privacy Policy - ${app.title} - Matt Harrington`}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-8">
+    <a href={`/work/${app.slug}`} class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-brand-blue transition-colors">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to {app.title}
+    </a>
+  </div>
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <img src={app.icon} alt={`${app.title} icon`} width="80" height="80" class="mx-auto mb-4 rounded-2xl" />
+      <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+      <p class="text-gray-400">{app.title}</p>
+    </div>
+
+    {privacySection ? (
+      <div class="space-y-4">
+        {privacySection.paragraphs.map(p => (
+          <p class="text-gray-300 leading-relaxed">{p}</p>
+        ))}
+      </div>
+    ) : (
+      <p class="text-gray-400">No privacy policy available for this app.</p>
+    )}
+
+    <div class="mt-12 pt-8 border-t border-gray-800">
+      <p class="text-gray-400 text-sm">
+        If you have any questions or concerns about this privacy policy, please contact us at{' '}
+        <a href={`mailto:${app.feedbackEmail}?subject=${app.title} Privacy Policy`} class="text-brand-blue hover:underline">
+          {app.feedbackEmail}
+        </a>.
+      </p>
+    </div>
+  </article>
+</BaseLayout>
