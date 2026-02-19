@@ -13,14 +13,14 @@ export const programmingSkills = [
   'SQL',
   'GitHub',
   'Docker',
-  'Continous Integration',
-  'Agenic Workflows',
+  'Continuous Integration',
+  'Agentic Workflows',
   'Agile Methodologies',
   'SCRUM',
   'KANBAN',
   'SAFe',
   'Modular Native UI',
-  'Native Component Libaries'
+  'Native Component Libraries'
 ];
 
 export const technologyEnvironments = [
@@ -34,7 +34,7 @@ export const technologyEnvironments = [
 ];
 
 export const technologyExposure = [
-  'Agenic Coding',
+  'Agentic Coding',
   'Prompting Generation',
   'Native Mobile AI Experiences',
   'Spatial Computing',
