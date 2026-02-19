@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const apps = await getCollection('apps');
+
+const allItems = apps
+  .map(a => ({
+    title: a.data.title,
+    slug: a.data.slug,
+    image: a.data.coverImage,
+    description: a.data.description,
+    order: a.data.order,
+  }))
+  .sort((a, b) => a.order - b.order);
+---
+
+<BaseLayout title="Work - Matt Harrington">
+  <section class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">My Work</h1>
+    <p class="text-center text-gray-400 mb-10 max-w-xl mx-auto">
+      iOS, watchOS, and visionOS Applications
+    </p>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+      {allItems.map(item => (
+        <a
+          href={`/work/${item.slug}`}
+          class="group relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-800"
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="300"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="text-xl font-semibold text-white">{item.title}</h3>
+            {item.description && (
+              <p class="text-sm text-gray-200 mt-1 line-clamp-2">{item.description}</p>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

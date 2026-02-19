@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout title="Blog - Matt Harrington">
+  <section class="py-16 px-4 sm:px-6 max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">Blog</h1>
+    <p class="text-center text-gray-400 mb-12 max-w-xl mx-auto">
+      Thoughts on iOS development, photography, and things I'm learning.
+    </p>
+
+    {posts.length === 0 ? (
+      <p class="text-center text-gray-500">No posts yet. Check back soon!</p>
+    ) : (
+      <div class="space-y-8">
+        {posts.map(post => (
+          <article class="group" data-animate>
+            <a href={`/blog/${post.id}`} class="block p-6 rounded-xl bg-gray-900 hover:bg-gray-800 transition-colors">
+              <div class="flex items-center gap-3 mb-3">
+                <time datetime={new Date(post.data.date).toISOString().slice(0, 10)} class="text-sm text-gray-500">
+                  {new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="flex gap-2">
+                    {post.data.tags.map(tag => (
+                      <span class="text-xs px-2 py-0.5 rounded-full bg-brand-blue/20 text-blue-300">{tag}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <h2 class="text-xl font-semibold mb-2 group-hover:text-brand-blue transition-colors">
+                {post.data.title}
+              </h2>
+              <p class="text-gray-400 text-sm leading-relaxed">{post.data.description}</p>
+            </a>
+          </article>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

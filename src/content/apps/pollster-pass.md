@@ -1,0 +1,57 @@
+---
+title: Pollster Pass
+slug: pollster-pass
+description: Quickly view the latest polling information and trends to keep you in the know!
+icon: /images/apps/pollsterpass/icon.png
+coverImage: /images/apps/pollsterpass/websiteLatest.png
+backgroundVideo: /videos/ppBackground.mov
+feedbackEmail: matt2harrington@gmail.com
+order: 1
+sections:
+  - title: Polling
+    paragraphs:
+      - Pollster Pass allows you to quickly view the latest polling information and trends to keep you in the know!
+      - View the latest polls.
+      - Stay informed with the latest in polling information.
+      - The latest subjects and polling topics important to you.
+    image: /images/apps/pollsterpass/websiteLatest.png
+  - title: Info
+    paragraphs:
+      - Filter by many subjects, pollsters or date range.
+      - Share Polls with friends.
+      - "View poll's website publishment right in the app."
+    image: /images/apps/pollsterpass/websiteInfo.png
+  - title: Interactive Charts
+    paragraphs:
+      - Explore polling trends over time with fully interactive charts.
+      - Pinch, zoom, and scrub through multiple subjects across different time periods.
+      - Toggle between time ranges to see how the numbers have shifted over weeks, months, or the full cycle.
+    image: /images/apps/pollsterpass/websiteCharts.png
+  - title: Widgets
+    paragraphs:
+      - Pollster Pass widgets bring polling data right to your Home Screen!
+      - View the Democratic Primary, Republican Primary, Generic Ballot, and approval ratings at a glance.
+      - A 7-Day Trends widget keeps you updated with the latest shifts in polling data without even opening the app.
+      - Multiple widget sizes available to fit your Home Screen layout.
+    image: /images/apps/pollsterpass/websiteWidgets.png
+  - title: Interactive Electoral Map
+    paragraphs:
+      - Explore the Electoral College with a fully interactive map powered by the latest polling data.
+      - Toggle between Likely Polling and custom scenarios with Edit EVs to assign states yourself.
+      - See the path to 270 at a glance with a color-coded breakdown from Safe D to Safe R and toss-up states in between.
+      - Tap any state to view detailed polling information and electoral vote counts.
+    image: /images/apps/pollsterpass/websiteInterativeMap.png
+  - title: Pollster Pass Pro
+    paragraphs:
+      - Unlock the full experience with Pollster Pass Pro!
+      - Get Extended Charts with full history and data access, plus insight into more races.
+      - Access the Interactive Electoral Map to create and save custom electoral predictions with generated presets.
+      - Premium Widgets with exclusive insights added periodically.
+      - Advanced Filters to sort by pollster, sample size, and population.
+      - Start with a 1-week free trial, then choose Monthly or Annual pricing with up to 58% savings.
+    image: /images/apps/pollsterpass/websitePro.png
+  - title: Privacy Policy
+    paragraphs:
+      - "Pollster Pass and it's developer take your privacy very seriously. No information is stored in Pollster Pass and users are not tracked in any way! Pollster Pass accesses and only stores polling data from its polling source, with no data collection from the user."
+    image: /images/apps/pollsterpass/icon.png
+---

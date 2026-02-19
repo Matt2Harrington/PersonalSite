@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+
+const apps = await getCollection('apps');
+
+const featured = apps
+  .map(a => ({
+    title: a.data.title,
+    slug: a.data.slug,
+    image: a.data.coverImage,
+    order: a.data.order,
+  }))
+  .sort((a, b) => a.order - b.order);
+---
+
+<section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto" data-animate>
+  <h2 class="text-3xl font-bold text-center mb-4">Featured Work</h2>
+  <p class="text-center text-gray-400 mb-12 max-w-xl mx-auto">
+    iOS, watchOS, and visionOS Applications
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {featured.map(item => (
+      <a
+        href={`/work/${item.slug}`}
+        class="group relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-800"
+      >
+        <img
+          src={item.image}
+          alt={item.title}
+          loading="lazy"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <h3 class="text-lg font-semibold text-white">{item.title}</h3>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div class="text-center mt-10">
+    <a
+      href="/work"
+      class="inline-block px-6 py-3 text-brand-blue border border-brand-blue rounded-full font-medium hover:bg-brand-blue hover:text-white transition-colors duration-300"
+    >
+      View All Work
+    </a>
+  </div>
+</section>
