@@ -18,7 +18,7 @@
       Matt Harrington
     </h1>
     <p class="text-xl md:text-2xl font-light mb-8 tracking-wide">
-      iOS Developer &amp; Photographer
+      iOS Developer
     </p>
     <a
       href="/work"
@@ -34,3 +34,13 @@
     </svg>
   </div>
 </section>
+
+<script>
+  function playHeroVideo() {
+    const video = document.querySelector('section video') as HTMLVideoElement;
+    if (video) video.play().catch(() => {});
+  }
+
+  playHeroVideo();
+  document.addEventListener('astro:after-swap', playHeroVideo);
+</script>

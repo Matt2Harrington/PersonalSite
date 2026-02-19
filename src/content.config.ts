@@ -19,4 +19,36 @@ const photography = defineCollection({
   }),
 });
 
-export const collections = { photography };
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()).optional(),
+    image: z.string().optional(),
+  }),
+});
+
+const apps = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/apps' }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    icon: z.string(),
+    coverImage: z.string(),
+    backgroundVideo: z.string(),
+    appStoreUrl: z.string().optional(),
+    feedbackEmail: z.string(),
+    order: z.number(),
+    sections: z.array(z.object({
+      title: z.string(),
+      paragraphs: z.array(z.string()),
+      image: z.string().optional(),
+      video: z.string().optional(),
+    })),
+  }),
+});
+
+export const collections = { photography, blog, apps };
