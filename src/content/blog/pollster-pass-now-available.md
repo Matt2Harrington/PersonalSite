@@ -23,3 +23,5 @@ There are native iOS widgets as well, so the data comes to your Home Screen with
 With Pollster Pass Pro, unlock more widgets, more legend data, more Electoral Map customization, and later this year, more election data in 2026!
 
 Pollster Pass is free to download now in the App Store!
+
+![](/images/blog/Charts_iPad.jpg)
