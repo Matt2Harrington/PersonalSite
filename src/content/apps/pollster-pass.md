@@ -5,6 +5,7 @@ description: Quickly view the latest polling information and trends to keep you 
 icon: /images/apps/pollsterpass/icon.png
 coverImage: /images/apps/pollsterpass/websiteLatest.png
 backgroundVideo: /videos/ppBackground.mov
+appStoreUrl: https://apps.apple.com/us/app/pollster-pass/id6744908209
 feedbackEmail: matt2harrington@gmail.com
 order: 1
 sections:
