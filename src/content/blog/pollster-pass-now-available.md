@@ -10,8 +10,6 @@ tags:
   - Pollster Pass
 image: /images/blog/Charts_iPad.jpg
 ---
-# Pollster Pass Now Available
-
 Pollster Pass has been a passion project of mine for over a year. A year that started with a custom glassEffect package creation that was then replaced by Liquid Glass in Summer 2026.
 
 By utilizing VoteHub data, Pollster Pass is a quick and easy way to stay on top of the latest in political data for the hardcore stats fans out there that enjoy seeing the macro and micro changes over time.
