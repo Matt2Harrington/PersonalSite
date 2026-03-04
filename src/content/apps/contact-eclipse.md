@@ -3,39 +3,49 @@ title: Contact Eclipse
 slug: contact-eclipse
 description: Full control over your contacts with duplicate detection, custom lists, and more.
 icon: /images/apps/contacteclipse/icon.png
-coverImage: /images/apps/contacteclipse/icon.png
+coverImage: /images/apps/contacteclipse/Colorful_Contacts.jpg
 backgroundVideo: /videos/ce.mp4
 appStoreUrl: https://apps.apple.com/us/app/contact-eclipse/id1608625389
 feedbackEmail: matt2harrington@gmail.com
 supportDescription: "Need help with Contact Eclipse? Whether you have questions about managing contacts, duplicate detection, custom lists, NFC sharing, or using Contact Eclipse on Apple Vision Pro, we're here to help. Reach out and we'll get back to you as soon as possible."
 order: 3
 sections:
-  - title: Contacts
+  - title: Colorful Contacts
     paragraphs:
-      - Contact Eclipse gives full control over your contacts.
-      - "It starts with the presentation in the list. The contact's image is direction on the row below youe fingertips with their name and number on easy display as well."
-      - Select mutiple contacts for deletion, or merging them together to clean up your contact book or add a new contact with the quick and easy button right at the top of the screen when in a rush!
-      - And of course there are Favorites! Pin any amount of contacts right to the top for quick and easy access when it is needed most. Scroll horizontally to view contacts as they are added or hide them completely!
-    video: /videos/contacts.mp4
-  - title: Duplicate Contacts
+      - Placeholder text.
+    image: /images/apps/contacteclipse/Colorful_Contacts.jpg
+  - title: Manage Duplicates
     paragraphs:
-      - Contact Eclipse allows for contact duplication detection!
-      - "Easily find contacts that share common attributes such as name, phone number, address, or email!"
-      - "Select mutiple contacts for deletion, or merge them together as fit best to clean up your contacts quickly and efficiently!"
-      - Take control of your contacts!
-    video: /videos/duplicates.mp4
-  - title: Custom Lists
+      - Manage duplicates by many different filters including First Name, Last Name, Email, Phone Number and more!
+    image: /images/apps/contacteclipse/Manage_Duplicates.jpg
+  - title: iCloud Sync Lists
     paragraphs:
-      - Contact Eclipse can create custom lists from existing contacts for super quick and easy communication.
-      - "Group together contacts that mean the most to you, with a beautiful display of image and easy information."
-      - "After creation, lists can be updated quickly and as often as needed to keep you life updated."
-    video: /videos/lists.mp4
-  - title: Native on Apple Vision Pro
+      - Custom Lists now sync across all supported Apple devices and backup for future use!
+    image: /images/apps/contacteclipse/iCloud_Sync_Lists.jpg
+  - title: Message Lists At Once
     paragraphs:
-      - Contact Eclipse was the first Contacts app available natively on Apple Vision Pro in 2024.
-      - Built from the ground up for visionOS, Contact Eclipse takes full advantage of the spatial computing platform.
-      - Manage your contacts, detect duplicates, and organize custom lists — all in an immersive environment designed for Vision Pro.
-    image: /images/apps/contacteclipse/icon.png
+      - Ever want to message a list in a group, or everyone on a list the same message but NOT in a group? Now you can!
+    image: /images/apps/contacteclipse/Message_Lists_At_Once.jpg
+  - title: QR Code Contact Sharing
+    paragraphs:
+      - Share your contact card quickly via QR code right in the app on the Card view.
+    image: /images/apps/contacteclipse/QR_Code_Sharing_Lists.jpg
+  - title: Access NFC
+    paragraphs:
+      - Write your own contact information to a supported NFC contact card and read/add others quickly!
+    image: /images/apps/contacteclipse/Access_NFC.jpg
+  - title: Suit Your Style
+    paragraphs:
+      - Custom styles and theming to add your own flavor!
+    image: /images/apps/contacteclipse/Suit_Your_Style_Colors.jpg
+  - title: Widgets
+    paragraphs:
+      - Custom Widgets for many features to quickly access the application!
+    image: /images/apps/contacteclipse/Widgets.jpg
+  - title: iPad Support
+    paragraphs:
+      - Native support on iPad as well for contact management and iCloud Sync!
+    image: /images/apps/contacteclipse/iPad_Support.jpg
   - title: Privacy Policy
     paragraphs:
       - "Contact Eclipse and its developer take your privacy very seriously. No information that is stored in Contact Eclipse is used in anyway that is not advertised as Contact Eclipse reads and writes directly to the device's Contacts store only."
