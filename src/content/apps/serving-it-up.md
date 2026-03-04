@@ -7,6 +7,7 @@ coverImage: /images/apps/servingitup/WatchTennisClay.png
 backgroundVideo: /videos/sitv2.mov
 appStoreUrl: https://apps.apple.com/us/app/serving-it-up/id6503021488
 feedbackEmail: matt2harrington@gmail.com
+supportDescription: "Need help with Serving It Up!? Whether you have questions about tracking tennis or pickleball matches, Apple Watch workouts, iCloud syncing, or match settings, we're here to help. Reach out and we'll get back to you as soon as possible."
 order: 2
 sections:
   - title: Tennis
