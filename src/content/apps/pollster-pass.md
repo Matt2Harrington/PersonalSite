@@ -7,6 +7,7 @@ coverImage: /images/apps/pollsterpass/websiteLatest.png
 backgroundVideo: /videos/ppBackground.mov
 appStoreUrl: https://apps.apple.com/us/app/pollster-pass/id6744908209
 feedbackEmail: matt2harrington@gmail.com
+supportDescription: "Need help with Pollster Pass? Whether you have questions about polling data, charts, widgets, the Interactive Electoral Map, or Pollster Pass Pro, we're here to help. Reach out and we'll get back to you as soon as possible."
 order: 1
 sections:
   - title: Polling

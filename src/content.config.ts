@@ -41,6 +41,7 @@ const apps = defineCollection({
     backgroundVideo: z.string(),
     appStoreUrl: z.string().optional(),
     feedbackEmail: z.string(),
+    supportDescription: z.string().optional(),
     order: z.number(),
     sections: z.array(z.object({
       title: z.string(),

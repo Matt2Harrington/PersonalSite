@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const apps = await getCollection('apps');
+  return apps.map(app => ({
+    params: { slug: app.data.slug },
+    props: { app: app.data },
+  }));
+}
+
+const { app } = Astro.props;
+---
+
+<BaseLayout title={`Support - ${app.title} - Matt Harrington`}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-8">
+    <a href={`/work/${app.slug}`} class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-brand-blue transition-colors">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to {app.title}
+    </a>
+  </div>
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="text-center mb-12">
+      <img src={app.icon} alt={`${app.title} icon`} width="80" height="80" class="mx-auto mb-4 rounded-2xl" />
+      <h1 class="text-3xl font-bold mb-2">Support</h1>
+      <p class="text-gray-400">{app.title}</p>
+    </div>
+
+    {app.supportDescription && (
+      <p class="text-gray-300 leading-relaxed mb-8">{app.supportDescription}</p>
+    )}
+
+    <div class="bg-gray-900 rounded-xl p-6 mb-8">
+      <h2 class="text-lg font-semibold mb-4">Contact Us</h2>
+      <p class="text-gray-400 text-sm mb-4">
+        Send us an email and we'll respond as quickly as we can.
+      </p>
+      <a
+        href={`mailto:${app.feedbackEmail}?subject=${app.title} Support`}
+        class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-blue text-white rounded-full font-medium hover:bg-blue-600 transition-colors"
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+        {app.feedbackEmail}
+      </a>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-gray-900 rounded-xl p-6">
+        <h2 class="text-lg font-semibold mb-2">Feedback</h2>
+        <p class="text-gray-400 text-sm">
+          Have a feature request or suggestion? We'd love to hear your ideas for making {app.title} even better.
+        </p>
+      </div>
+
+      <div class="bg-gray-900 rounded-xl p-6">
+        <h2 class="text-lg font-semibold mb-2">Bug Reports</h2>
+        <p class="text-gray-400 text-sm">
+          Found something not working right? Let us know what happened and we'll work on a fix. Please include your device model and OS version if possible.
+        </p>
+      </div>
+
+      {app.appStoreUrl && (
+        <div class="bg-gray-900 rounded-xl p-6">
+          <h2 class="text-lg font-semibold mb-2">Rate & Review</h2>
+          <p class="text-gray-400 text-sm mb-3">
+            Enjoying {app.title}? Leave a review on the App Store to help others discover the app.
+          </p>
+          <a
+            href={app.appStoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-sm text-brand-blue hover:underline"
+          >
+            View on the App Store
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+      )}
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-gray-800 flex flex-wrap gap-4 text-sm text-gray-500">
+      <a href={`/work/${app.slug}/privacy-policy`} class="hover:text-brand-blue transition-colors">Privacy Policy</a>
+      <a href={`/work/${app.slug}`} class="hover:text-brand-blue transition-colors">{app.title} Home</a>
+    </div>
+  </article>
+</BaseLayout>

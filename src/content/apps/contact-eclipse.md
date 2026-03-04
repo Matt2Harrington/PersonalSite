@@ -7,6 +7,7 @@ coverImage: /images/apps/contacteclipse/icon.png
 backgroundVideo: /videos/ce.mp4
 appStoreUrl: https://apps.apple.com/us/app/contact-eclipse/id1608625389
 feedbackEmail: matt2harrington@gmail.com
+supportDescription: "Need help with Contact Eclipse? Whether you have questions about managing contacts, duplicate detection, custom lists, NFC sharing, or using Contact Eclipse on Apple Vision Pro, we're here to help. Reach out and we'll get back to you as soon as possible."
 order: 3
 sections:
   - title: Contacts
