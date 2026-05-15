@@ -3,8 +3,9 @@ title: Mic Facing
 slug: mic-facing
 description: Turn your iPhone into a portable voice studio — amplify, record, transcribe, and translate, all on-device.
 icon: /images/apps/micfacing/icon.png
-coverImage: /images/apps/micfacing/icon.png
+coverImage: /images/apps/micfacing/LiveListen.png
 backgroundVideo: ""
+appStoreUrl: https://apps.apple.com/us/app/mic-facing/id6767724761
 feedbackEmail: matt2harrington@gmail.com
 supportDescription: "Need help with Mic Facing? Whether you have questions about EQ presets, iCloud recording sync, on-device transcription, live translation, or external USB-C mic support, I'm here to help. Reach out and I'll get back to you as soon as possible."
 order: 4
